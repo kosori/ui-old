@@ -22,7 +22,8 @@
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwind-merge": "^1.11.0"
+    "tailwind-merge": "^1.11.0",
+    "tailwind-variants": "^0.1.1"
   },
   "devDependencies": {
     "@acme/eslint-config": "*",
