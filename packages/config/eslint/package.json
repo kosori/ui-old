@@ -11,7 +11,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-turbo": "^1.8.6",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "7.32.2"
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-tailwindcss": "^3.10.1"
   },
   "devDependencies": {
     "eslint": "^8.36.0",
