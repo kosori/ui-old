@@ -1,6 +1,12 @@
 {
-  "name": "create-t3-turbo",
+  "name": "ui",
+  "version": "0.0.1",
+  "license": "MIT",
   "private": true,
+  "author": {
+    "name": "codingcodax",
+    "url": "https://twitter.com/codingcodax"
+  },
   "engines": {
     "node": ">=v18.15.0"
   },
