@@ -15,9 +15,6 @@
     "format:write": "prettier --write . --cache"
   },
   "dependencies": {
-    "@acme/api": "*",
-    "@acme/auth": "*",
-    "@acme/db": "*",
     "@acme/tailwind-config": "*",
     "@tanstack/react-query": "^4.28.0",
     "@trpc/client": "^10.18.0",
