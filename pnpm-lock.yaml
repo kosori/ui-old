@@ -40,6 +40,9 @@ importers:
       '@acme/tailwind-config':
         specifier: '*'
         version: link:../../packages/config/tailwind
+      '@radix-ui/colors':
+        specifier: ^0.1.8
+        version: 0.1.8
       clsx:
         specifier: ^1.2.1
         version: 1.2.1
@@ -676,6 +679,10 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.5.0
+    dev: false
+
+  /@radix-ui/colors@0.1.8:
+    resolution: {integrity: sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==}
     dev: false
 
   /@rushstack/eslint-patch@1.2.0:
