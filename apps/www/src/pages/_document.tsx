@@ -4,7 +4,7 @@ const Document = () => {
   return (
     <Html className='scroll-smooth' lang='en'>
       <Head />
-      <body className='bg-mauve12 font-sans text-mauve1 antialiased'>
+      <body className='bg-mauveBase text-mauveTextContrast font-sans antialiased'>
         <Main />
         <NextScript />
       </body>
