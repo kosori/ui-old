@@ -16,6 +16,12 @@ const buttonStyles = tv({
         'active:bg-primaryText',
         'disabled:bg-primaryLine disabled:cursor-not-allowed',
       ),
+      secondary: cn(
+        'bg-primaryBg rounded-lg text-primarySolid transition-colors duration-200',
+        'hover:bg-primaryBgHover',
+        'active:bg-primaryBgActive',
+        'disabled:bg-mauveBg disabled:text-mauveSolid',
+      ),
     },
     size: {
       small: 'px-3 h-9 text-sm',
