@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes';
 import type { AppType } from 'next/app';
 import { Inter as FontSans } from 'next/font/google';
 
@@ -20,7 +21,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         }
       `}</style>
 
-      <Component {...pageProps} />
+      <ThemeProvider attribute='class' defaultTheme='system'>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };
