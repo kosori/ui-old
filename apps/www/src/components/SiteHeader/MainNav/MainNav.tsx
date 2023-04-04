@@ -1,8 +1,13 @@
+import NavLink from './NavLink';
+
 const MainNav = () => {
   return (
-    <div>
-      <p>MainNav</p>
-    </div>
+    <nav>
+      <ul className='flex gap-x-6'>
+        <NavLink href='/docs/getting-started'>Documentation</NavLink>
+        <NavLink href='/docs/primitives/avatar'>Components</NavLink>
+      </ul>
+    </nav>
   );
 };
 
