@@ -102,7 +102,7 @@ const colors = {
   warningSolidHover: yellow.yellow10,
   warningText: yellow.yellow11,
   warningTextContrast: yellow.yellow12,
-  
+
   errorBase: red.red1,
   errorBgSubtle: red.red2,
   errorBg: red.red3,
