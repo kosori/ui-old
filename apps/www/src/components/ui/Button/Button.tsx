@@ -5,7 +5,7 @@ import { cn } from '~/utils';
 
 const buttonStyles = tv({
   base: cn(
-    'flex w-fit items-center justify-center font-semibold',
+    'flex w-fit items-center justify-center font-semibold gap-x-2',
     'focus:outline focus:outline-primaryFocusRing focus:outline-2',
     'disabled:cursor-not-allowed',
   ),
