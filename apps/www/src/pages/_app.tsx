@@ -1,7 +1,8 @@
-import { ThemeProvider } from 'next-themes';
 import type { AppType } from 'next/app';
 import { Inter as FontSans } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 
+import { SiteFooter, SiteHeader } from '~/components';
 import '~/styles/globals.css';
 
 const fontSans = FontSans({
@@ -22,7 +23,11 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       `}</style>
 
       <ThemeProvider attribute='class' defaultTheme='system'>
-        <Component {...pageProps} />
+        <div className='flex min-h-screen gap-y-10 flex-col'>
+          <SiteHeader />
+          <Component {...pageProps} />
+          <SiteFooter />
+        </div>
       </ThemeProvider>
     </>
   );
