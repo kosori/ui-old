@@ -15,8 +15,8 @@ const SiteHeader = () => {
 
         <div className='flex gap-x-6'>
           <Link
+            className='text-mauveText hover:text-mauveTextContrast transition-colors duration-200'
             href='/'
-            className='text-mauveText transition-colors duration-200 hover:text-mauveTextContrast'
           >
             <SiGithub size={20} />
           </Link>

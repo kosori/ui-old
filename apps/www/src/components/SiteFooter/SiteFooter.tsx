@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const SiteFooter = () => {
   return (
-    <footer className='flex items-center h-12'>
+    <footer className='flex h-12 items-center'>
       <div className='mx-auto w-full max-w-screen-xl text-center'>
         <p className='text-sm text-mauveText'>
           Created by{' '}

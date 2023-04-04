@@ -23,7 +23,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       `}</style>
 
       <ThemeProvider attribute='class' defaultTheme='system'>
-        <div className='flex min-h-screen gap-y-10 flex-col'>
+        <div className='flex min-h-screen flex-col gap-y-10'>
           <SiteHeader />
           <Component {...pageProps} />
           <SiteFooter />
