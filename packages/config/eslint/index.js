@@ -45,6 +45,7 @@ const config = {
         reservedFirst: true,
       },
     ],
+    'tailwindcss/classnames-order': 'off',
     'tailwindcss/no-custom-classname': 'off',
   },
   ignorePatterns: ['**/*.config.js', '**/*.config.cjs', 'packages/config/**'],
