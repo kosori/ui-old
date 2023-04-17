@@ -1,9 +1,5 @@
-const Collapsible = () => {
-  return (
-    <div>
-      <p>Collapsible</p>
-    </div>
-  );
-};
+import { Root } from '@radix-ui/react-collapsible';
+
+const Collapsible = Root;
 
 export default Collapsible;
