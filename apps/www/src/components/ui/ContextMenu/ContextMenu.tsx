@@ -1,9 +1,5 @@
-const ContextMenu = () => {
-  return (
-    <div>
-      <p>ContextMenu</p>
-    </div>
-  );
-};
+import { Root } from '@radix-ui/react-context-menu';
+
+const ContextMenu = Root;
 
 export default ContextMenu;
