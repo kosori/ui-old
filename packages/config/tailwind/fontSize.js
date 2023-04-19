@@ -1,5 +1,5 @@
 const fontSize = {
-  xs: ['0.3rem', '1.125rem'],
+  xs: ['0.75rem', '1.125rem'],
   sm: ['0.875rem', '1.25rem'],
   base: ['1rem', '1.5rem'],
   lg: ['1.125rem', '1.75rem'],
