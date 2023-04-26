@@ -10,7 +10,7 @@ const Label = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <Root
     ref={ref}
     className={cn(
-      'text-sm font-medium',
+      'text-md font-medium',
       'peer-disabled:cursor-not-allowed peer-disabled:text-mauveSolid',
       className,
     )}
