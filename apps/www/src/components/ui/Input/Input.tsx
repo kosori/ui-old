@@ -9,7 +9,7 @@ const Input = forwardRef<Ref, Props>(({ className, type, ...props }, ref) => (
   <input
     ref={ref}
     className={cn(
-      'flex w-full justify-center rounded-lg border border-mauveBorder bg-mauveBase px-4 py-[7px] transition-colors duration-0 placeholder:text-mauvePlaceholderText',
+      'flex w-full justify-center rounded-lg border border-mauveBorder bg-mauveBase px-4 py-[7px] transition-colors duration-200 placeholder:text-mauvePlaceholderText',
       'file:cursor-pointer file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-mauveTextContrast',
       'hover:border-mauveBorderHover',
       'focus:outline focus:outline-primaryFocusRing',
