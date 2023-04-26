@@ -1,9 +1,5 @@
-const Dialog = () => {
-  return (
-    <div>
-      <p>Dialog</p>
-    </div>
-  );
-};
+import { Root } from '@radix-ui/react-dialog';
+
+const Dialog = Root;
 
 export default Dialog;
