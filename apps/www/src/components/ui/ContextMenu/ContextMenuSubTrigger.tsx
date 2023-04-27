@@ -14,7 +14,7 @@ const ContextMenuSubTrigger = forwardRef<Ref, Props>(
     <SubTrigger
       ref={ref}
       className={cn(
-        'flex h-8 select-none items-center rounded-md px-2 text-sm outline-none',
+        'flex h-8 select-none items-center rounded-md px-2 text-sm outline-none transition-colors duration-200',
         'focus:bg-primaryBgHover',
         'data-[state=open]:bg-primaryBgHover',
         inset && 'pl-8',
