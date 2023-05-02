@@ -1,5 +1,22 @@
+import { forwardRef } from 'react';
 import { Root } from '@radix-ui/react-menubar';
 
-const MenuBar = Root;
+import { cn } from '~/utils';
 
-export default MenuBar;
+type Ref = React.ElementRef<typeof Root>;
+type Props = React.ComponentPropsWithoutRef<typeof Root>;
+
+const Menubar = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
+  <Root
+    ref={ref}
+    className={cn(
+      'flex h-10 items-center space-x-1 rounded-lg border border-mauveLine bg-mauveBase p-1',
+      className,
+    )}
+    {...props}
+  />
+));
+
+Menubar.displayName = Root.displayName;
+
+export default Menubar;
