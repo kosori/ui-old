@@ -12,7 +12,7 @@ const SelectItem = forwardRef<Ref, Props>(
     <Item
       ref={ref}
       className={cn(
-        'relative flex h-10 w-full cursor-pointer select-none items-center rounded-md pl-8 pr-2 text-sm outline-none transition-colors duration-200',
+        'relative flex h-8 w-full cursor-pointer select-none items-center rounded-md pl-8 pr-2 text-sm outline-none transition-colors duration-200',
         'focus:bg-primaryBgHover',
         'data-[disabled]:cursor-not-allowed data-[disabled]:text-mauveSolid',
         className,
