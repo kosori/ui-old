@@ -1,9 +1,5 @@
-const Tooltip = () => {
-  return (
-    <div>
-      <p>Tooltip</p>
-    </div>
-  );
-};
+import { Root } from '@radix-ui/react-tooltip';
+
+const Tooltip = Root;
 
 export default Tooltip;
