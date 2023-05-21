@@ -5,35 +5,44 @@ import { cn } from '~/utils';
 
 const buttonStyles = tv({
   base: cn(
-    'flex w-fit items-center justify-center font-semibold gap-x-2',
-    'focus:outline focus:outline-primaryFocusRing focus:outline-2',
+    'flex w-fit items-center justify-center font-semibold outline-none transition-colors duration-200',
+    'focus-visible:ring-4',
     'disabled:cursor-not-allowed',
   ),
   variants: {
     intent: {
       primary: cn(
-        'bg-primarySolid rounded-lg text-mauveBase trasition-colors duration-200',
+        'bg-primarySolid text-mauveBase',
         'hover:bg-primarySolidHover',
-        'active:bg-primaryText',
-        'disabled:bg-primaryLine',
+        'focus-visible:ring-primaryFocusRing',
+        'disabled:bg-primaryBorder',
       ),
       secondary: cn(
-        'bg-primaryBg rounded-lg text-primarySolid transition-colors duration-200',
-        'hover:bg-primaryBgHover',
+        'bg-primaryBg border border-primaryBorder text-primarySolid',
+        'hover:bg-primaryBgHover hover:border-primaryBorderHover',
         'active:bg-primaryBgActive',
-        'disabled:bg-mauveBg disabled:text-mauveSolid',
+        'focus-visible:ring-primaryFocusRing',
+        'disabled:bg-primaryBgSubtle disabled:text-primaryLine disabled:border-primaryLine',
       ),
       tertiary: cn(
-        'bg-mauveBase rounded-lg text-mauveTextContrast border border-mauveBorder transition-colors duration-200',
+        'bg-mauveBase text-mauveTextContrast border border-mauveBorder',
         'hover:bg-mauveBgSubtle hover:border-mauveBorderHover',
         'active:bg-mauveBg',
-        'disabled:bg-mauveBg disabled:text-mauveSolid',
+        'disabled:text-mauveSolid disabled:border-mauveLine disabled:bg-mauveBase',
+      ),
+      quaternary: cn(
+        'text-mauveTextContrast',
+        'hover:bg-mauveBgHover',
+        'active:bg-mauveBgActive',
+        'disabled:bg-transparent disabled:text-mauveSolid',
       ),
     },
     size: {
-      small: 'px-3 h-9 text-sm',
-      medium: 'px-4 h-10 text-sm',
-      large: 'px-6 h-12 text-md',
+      'extra-small': 'px-2 py-1 text-[10px] rounded-md gap-x-1',
+      small: 'px-2.5 py-2 text-xs rounded-lg gap-x-1.5',
+      medium: 'px-3 py-2 text-sm rounded-lg gap-x-2',
+      large: 'px-4 py-3 text-md rounded-xl gap-x-2.5',
+      'extra-large': 'px-4 py-4 text-lg rounded-xl gap-x-3',
     },
   },
   defaultVariants: {
