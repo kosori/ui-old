@@ -11,20 +11,19 @@ const Checkbox = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <Root
     ref={ref}
     className={cn(
-      'group peer h-4 w-4 rounded-[4px] border border-mauveBorder bg-mauveBase transition-colors duration-200',
+      'group peer h-5 w-5 rounded-md border border-mauveBorder bg-mauveBase outline-none transition-colors duration-200',
       'hover:border-mauveBorderHover',
-      'focus:outline focus:outline-primaryFocusRing',
-      'disabled:cursor-not-allowed disabled:border-mauveLine disabled:bg-mauveBg',
-      'data-[state=checked]:border-primaryBorder data-[state=checked]:bg-primaryBg',
-      'data-[state=checked]:hover:border-primaryBorderHover',
-      'data-[state=checked]:disabled:border-mauveLine data-[state=checked]:disabled:bg-mauveBg',
-      'data-[state=checked]:disabled:hover:border-mauveLine',
+      'focus-visible:ring-mauveFocusRing focus-visible:ring-4',
+      'disabled:cursor-not-allowed disabled:border-0 disabled:bg-mauveLine',
+      'data-[state=checked]:border-0 data-[state=checked]:bg-primarySolid',
+      'data-[state=checked]:focus-visible:ring-primaryFocusRing',
+      'data-[state=checked]:disabled:border-0 data-[state=checked]:disabled:bg-mauveLine',
       className,
     )}
     {...props}
   >
     <Indicator className={cn('flex items-center justify-center')}>
-      <Check className='h-4 w-4 text-primarySolid group-disabled:text-mauveSolid' />
+      <Check className='h-4 w-4 text-mauveBase group-disabled:text-mauveSolid' />
     </Indicator>
   </Root>
 ));
