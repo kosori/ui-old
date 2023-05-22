@@ -124,6 +124,7 @@ const colors = {
   mauveLine: mauve.mauve6,
   mauveBorder: mauve.mauve7,
   mauveBorderHover: mauve.mauve8,
+  mauveFocusRing: mauve.mauve8,
   mauveSolid: mauve.mauve9,
   mauvePlaceholderText: mauve.mauve9,
   mauveSolidHover: mauve.mauve10,
