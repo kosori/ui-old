@@ -163,6 +163,9 @@ importers:
       remark-gfm:
         specifier: ^3.0.1
         version: 3.0.1
+      shiki:
+        specifier: ^0.14.2
+        version: 0.14.2
       superjson:
         specifier: ^1.12.2
         version: 1.12.2
