@@ -1,6 +1,6 @@
+import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { type ClassNameValue } from 'tailwind-merge/dist/lib/tw-join';
 
-const cn = (...inputs: ClassNameValue[]) => twMerge(inputs);
+const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
 
 export default cn;
