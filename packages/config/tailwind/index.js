@@ -4,6 +4,7 @@ const fontSize = require('./fontSize');
 
 /** @type {import('tailwindcss').Config} */
 const config = {
+  darkMode: 'class',
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     colors,
