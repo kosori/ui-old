@@ -4,5 +4,6 @@ export { default as ComponentSource } from './ComponentSource';
 export { default as CopyButton } from './CopyButton';
 export { default as CopyNpmCommandButton } from './CopyNpmCommandButton';
 export { default as CopyWithClassNamesButton } from './CopyWithClassNamesButton';
+export { default as MdxComponents } from './MdxComponents';
 export { default as SiteFooter } from './SiteFooter';
 export { default as SiteHeader } from './SiteHeader';
