@@ -1,4 +1,5 @@
 export { default as CodeBlockWrapper } from './CodeBlockWrapper';
+export { default as ComponentExample } from './ComponentExample';
 export { default as CopyButton } from './CopyButton';
 export { default as CopyNpmCommandButton } from './CopyNpmCommandButton';
 export { default as CopyWithClassNamesButton } from './CopyWithClassNamesButton';
