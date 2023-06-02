@@ -63,6 +63,7 @@
     "@types/react": "^18.0.30",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
+    "esbuild": "^0.17.19",
     "eslint": "^8.36.0",
     "postcss": "^8.4.21",
     "rehype": "^12.0.1",
@@ -77,5 +78,8 @@
     "typescript": "^5.0.2",
     "unist-builder": "^3.0.0",
     "unist-util-visit": "^4.1.1"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.17.19"
   }
 }
