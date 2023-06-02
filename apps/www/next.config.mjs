@@ -3,6 +3,7 @@
  * This is especially useful for Docker builds and Linting.
  */
 // !process.env.SKIP_ENV_VALIDATION && (await import("./src/env.mjs"));
+import { withContentlayer } from 'next-contentlayer/.';
 
 /** @type {import("next").NextConfig} */
 const config = {
@@ -13,4 +14,4 @@ const config = {
   typescript: { ignoreBuildErrors: !!process.env.CI },
 };
 
-export default config;
+export default withContentlayer(config);
