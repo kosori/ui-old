@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { readFileSync } from 'fs';
 import {
   defineDocumentType,
   defineNestedType,
+  makeSource,
+  type ComputedFields,
 } from 'contentlayer/source-files';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
@@ -11,10 +14,10 @@ import remarkGfm from 'remark-gfm';
 // import { getHighlighter, loadTheme } from 'shiki';
 import { visit } from 'unist-util-visit';
 
-import { rehypeComponent, rehypeNpmCommand } from '~/helpers';
+import type { UnistNode, UnistTree } from '~/types';
+import { rehypeComponent, rehypeNpmCommand } from './src/helpers';
 
-/** @type {import('contentlayer/source-files').ComputedFields} */
-const computedFields = {
+const computedFields: ComputedFields = {
   slug: {
     type: 'string',
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
@@ -43,7 +46,7 @@ export const Doc = defineDocumentType(() => ({
   contentType: 'mdx',
   fields: {
     title: {
-      type: 'strig',
+      type: 'string',
       required: true,
     },
     description: {
@@ -52,11 +55,11 @@ export const Doc = defineDocumentType(() => ({
     },
     published: {
       type: 'boolean',
-      required: true,
+      default: true,
     },
     radix: {
       type: 'nested',
-      required: RadixProperties,
+      of: RadixProperties,
     },
     featured: {
       type: 'boolean',
@@ -72,16 +75,16 @@ export const Doc = defineDocumentType(() => ({
   computedFields,
 }));
 
-const makeSource = () => ({
-  contentDirPath: './content',
+export default makeSource({
+  contentDirPath: './src/content',
   documentTypes: [Doc],
   mdx: {
     remarkPlugins: [remarkGfm, codeImport],
     rehypePlugins: [
       rehypeSlug,
       rehypeComponent,
-      () => (tree) => {
-        visit(tree, (node) => {
+      () => (tree: UnistTree) => {
+        visit(tree, (node: UnistNode) => {
           if (node?.type === 'element' && node?.tagName === 'pre') {
             const [codeEl] = node.children;
 
@@ -106,14 +109,14 @@ const makeSource = () => ({
       [
         rehypePrettyCode,
         {
-          theme: {
-            dark: JSON.parse(
-              readFileSync(path.resolve('./helpers/themes/dark.json'), 'utf-8'),
-            ),
-            light: JSON.parse(
-              readFileSync(path.resolve('./helpers/themes/dark.json'), 'utf-8'),
-            ),
-          },
+          // theme: {
+          //   dark: JSON.parse(
+          //     readFileSync(path.resolve('./helpers/themes/dark.json'), 'utf-8'),
+          //   ),
+          //   light: JSON.parse(
+          //     readFileSync(path.resolve('./helpers/themes/dark.json'), 'utf-8'),
+          //   ),
+          // },
           // getHighlighter: async () => {
           //   const theme = await loadTheme(
           //     path.join(process.cwd(), 'lib/vscode-theme.json'),
@@ -135,8 +138,8 @@ const makeSource = () => ({
           },
         },
       ],
-      () => (tree) => {
-        visit(tree, (node) => {
+      () => (tree: UnistTree) => {
+        visit(tree, (node: UnistNode) => {
           if (node?.type === 'element' && node?.tagName === 'div') {
             if (!('data-rehype-pretty-code-fragment' in node.properties))
               return;
@@ -172,5 +175,3 @@ const makeSource = () => ({
     ],
   },
 });
-
-export default makeSource;
