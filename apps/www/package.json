@@ -12,7 +12,9 @@
     "preview": "next build && next start",
     "type-check": "tsc --noEmit",
     "format:check": "prettier --check . --cache",
-    "format:write": "prettier --write . --cache"
+    "format:write": "prettier --write . --cache",
+    "contentlayer:dev": "contentlayer dev",
+    "contentlayer:build": "contentlayer build"
   },
   "dependencies": {
     "@acme/tailwind-config": "*",
