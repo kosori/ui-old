@@ -5,7 +5,7 @@ const docs = {
       items: [
         {
           title: 'Introduction',
-          href: '/docs/Introduction',
+          href: '/docs/introduction',
           items: [],
         },
         {
