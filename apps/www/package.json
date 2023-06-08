@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "clean": "git clean -xdf .next .turbo node_modules",
-    "dev": "concurrently \"contentlayer dev\" \"next dev -p 3000\"",
+    "dev": "next dev",
     "lint": "SKIP_ENV_VALIDATION=1 next lint",
     "lint:fix": "pnpm lint --fix",
     "start": "next start",
@@ -67,6 +67,7 @@
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.17.19",
     "eslint": "^8.36.0",
+    "mdast-util-toc": "^6.1.1",
     "postcss": "^8.4.21",
     "rehype": "^12.0.1",
     "rehype-autolink-headings": "^6.1.1",
