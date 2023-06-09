@@ -5,7 +5,7 @@ import MainNav from './MainNav';
 
 const SiteHeader = () => {
   return (
-    <header className='sticky top-0 z-10 flex h-16 w-full items-center border-b border-mauveLine bg-mauveBase'>
+    <header className='sticky top-0 z-20 flex h-16 w-full items-center border-b border-mauveLine bg-mauveBase'>
       <div className='mx-auto flex w-full max-w-screen-xl justify-between'>
         <Link className='font-bold' href='/'>
           /ui
