@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
 import { toc } from 'mdast-util-toc';
@@ -5,15 +6,7 @@ import type { Node } from 'mdast-util-toc/lib';
 import { remark } from 'remark';
 import { visit } from 'unist-util-visit';
 
-type Item = {
-  title: string;
-  url: string;
-  items?: Item[];
-};
-
-type Items = {
-  items?: Item[];
-};
+import type { TocItem, TocItems } from '~/types';
 
 const textTypes = ['text', 'emphasis', 'strong', 'inlineCode'];
 
@@ -22,13 +15,14 @@ const flattenNode = (node: Node) => {
   visit(node, (node) => {
     if (!textTypes.includes(node.type)) return;
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
     p.push(node.value);
   });
 
   return p.join('');
 };
 
-const getItems = (node: Node, current: Item): Items => {
+const getItems = (node: Node, current: TocItem): TocItems => {
   if (!node) return {};
 
   if (node.type === 'paragraph') {
@@ -61,12 +55,11 @@ const getItems = (node: Node, current: Item): Items => {
   return {};
 };
 
-const getToc = () => (tree: Node, file: { data: Items }) => {
+const getToc = () => (tree: Node, file: { data: TocItems }) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const table = toc(tree);
-  file.data = getItems(tree, {});
+  file.data = getItems(table.map, {});
 };
-export type TableOfContents = Items;
 
 export const getTableOfContents = async (content: string) => {
   const result = await remark().use(getToc).process(content);
