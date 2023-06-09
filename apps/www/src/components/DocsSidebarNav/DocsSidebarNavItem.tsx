@@ -38,7 +38,7 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
         'relative w-full items-center rounded-md px-5 py-1.5 text-sm transition-colors duration-200',
         'hover:bg-primaryBgHover',
         item.disabled && 'cursor-not-allowed text-mauveText',
-        pathname === item.href
+        pathname?.includes(item.href || '')
           ? cn(
               'bg-primaryBgActive text-mauveTextContrast',
               'hover:bg-primaryBgActive',
@@ -60,8 +60,8 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
           {item.label}
         </span>
       )}
-      {pathname === item.href && (
-        <div className='absolute left-2 top-1 z-30 h-6 w-px bg-primarySolid' />
+      {pathname?.includes(item.href || '') && (
+        <div className='absolute left-2 top-1 z-10 h-6 w-px bg-primarySolid' />
       )}
     </Link>
   );
