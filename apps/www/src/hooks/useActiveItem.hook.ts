@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const useActiveItem = (itemIds: string[]) => {
-  const [activeId, setActiveId] = useState<null | string>(null);
+  const [activeId, setActiveId] = useState<undefined | string>(undefined);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
