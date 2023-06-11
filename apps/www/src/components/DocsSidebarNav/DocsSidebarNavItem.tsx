@@ -35,7 +35,7 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
   return (
     <Link
       className={cn(
-        'relative w-full items-center rounded-md px-5 py-1.5 text-sm transition-colors duration-200',
+        'mouse-pointer relative w-full items-center rounded-md px-5 py-1.5 text-sm transition-colors duration-200',
         'hover:bg-primaryBgHover',
         item.disabled && 'cursor-not-allowed text-mauveText',
         pathname?.includes(item.href || '')
