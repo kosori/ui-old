@@ -1,5 +1,6 @@
 import { type HTMLAttributes, type ImgHTMLAttributes } from 'react';
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 
 import {
   Accordion,
@@ -28,8 +29,10 @@ const MdxComponents = {
   h2: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        'mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold',
+        'mb-3 mt-8 scroll-m-20 text-2xl font-semibold',
         'first:mt-0',
+        '[&_svg]:hidden',
+        '[&_code]:text-2xl [&_code]:font-semibold',
         className,
       )}
       {...props}
@@ -37,36 +40,53 @@ const MdxComponents = {
   ),
   h3: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h3
-      className={cn('mt-8 scroll-m-8 text-xl font-semibold', className)}
+      className={cn(
+        'mb-2 mt-6 scroll-m-8 text-xl font-semibold',
+        'first:mt-0',
+        '[&_svg]:hidden',
+        '[&_code]:text-xl [&_code]:font-semibold',
+        className,
+      )}
       {...props}
     />
   ),
   h4: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h4
-      className={cn('mt-8 scroll-m-8 text-lg font-semibold', className)}
+      className={cn('mb-2 mt-6 scroll-m-8 text-lg font-semibold', className)}
       {...props}
     />
   ),
   h5: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h5
-      className={cn('mt-8 scroll-m-8 text-lg font-semibold', className)}
+      className={cn('mb-2 mt-6 scroll-m-8 text-lg font-semibold', className)}
       {...props}
     />
   ),
   h6: ({ className, ...props }: HTMLAttributes<HTMLHeadingElement>) => (
     <h6
-      className={cn('mt-8 scroll-m-8 text-base font-semibold', className)}
+      className={cn('mb-2 mt-6 scroll-m-8 text-base font-semibold', className)}
       {...props}
     />
   ),
-  a: ({ className, ...props }: HTMLAttributes<HTMLAnchorElement>) => (
+  a: ({ className, children, ...props }: HTMLAttributes<HTMLAnchorElement>) => (
     <a
-      className={cn('font-medium underline underline-offset-4', className)}
+      className={cn(
+        'text-primarySolid transition-colors duration-200',
+        'hover:text-primarySolidHover',
+        className,
+      )}
+      rel='noopener noreferrer'
+      target='_blank'
       {...props}
-    />
+    >
+      {children}
+      <span className='ml-1 inline-flex items-start'>
+        <ExternalLink className='h-3.5 w-3.5' />
+      </span>
+    </a>
   ),
   p: ({ className, ...props }: HTMLAttributes<HTMLParagraphElement>) => (
-    <p className={cn('[&:not(:first-child)]:mt-6', className)} {...props} />
+    <p className={cn('mb-6', className)} {...props} />
   ),
   ul: ({ className, ...props }: HTMLAttributes<HTMLUListElement>) => (
     <ul className={cn('my-6 ml-6 list-disc', className)} {...props} />
@@ -143,8 +163,9 @@ const MdxComponents = {
     <>
       <pre
         className={cn(
-          'mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4',
-          'data-[theme=dark]:bg-mauveTextContrast data-[theme=light]:bg-mauveBase',
+          'mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border border-mauveLine bg-mauveBgSubtle py-4',
+          // 'data-[theme=dark]:bg-mauveTextContrast data-[theme=light]:bg-mauveBase',
+          '[&_code]:border-none [&_code]:bg-mauveBgSubtle',
           className,
         )}
         {...props}
@@ -173,9 +194,7 @@ const MdxComponents = {
   code: ({ className, ...props }: HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        'mb-12 ml-4 border-l pl-8',
-        '[&>h3]:step',
-        '[counter-reset:step]',
+        'relative rounded-md border border-mauveLine bg-mauveBgHover px-[0.25rem] py-[0.12rem] font-mono text-sm',
         className,
       )}
       {...props}
