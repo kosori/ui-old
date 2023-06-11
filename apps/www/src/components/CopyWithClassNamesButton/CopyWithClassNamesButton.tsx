@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { SiReact, SiTailwindcss } from '@icons-pack/react-simple-icons';
-import { DropdownMenuTriggerProps } from '@radix-ui/react-dropdown-menu';
+import { type DropdownMenuTriggerProps } from '@radix-ui/react-dropdown-menu';
 import { Check, Copy } from 'lucide-react';
 
 import {
