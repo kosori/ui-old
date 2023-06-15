@@ -10,3 +10,4 @@ export { default as Mdx } from './Mdx';
 export { default as MdxComponents } from './MdxComponents';
 export { default as SiteFooter } from './SiteFooter';
 export { default as SiteHeader } from './SiteHeader';
+export { default as SiteHero } from './SiteHero';
