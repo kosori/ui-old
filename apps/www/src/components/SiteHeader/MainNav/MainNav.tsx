@@ -2,10 +2,11 @@ import NavLink from './NavLink';
 
 const MainNav = () => {
   return (
-    <nav>
+    <nav className='flex items-center'>
       <ul className='flex gap-x-6'>
-        <NavLink href='/docs/getting-started'>Documentation</NavLink>
-        <NavLink href='/docs/primitives/avatar'>Components</NavLink>
+        <NavLink href='/docs/introduction'>Documentation</NavLink>
+        <NavLink href='/docs/components'>Components</NavLink>
+        <NavLink href='/docs/examples'>Examples</NavLink>
       </ul>
     </nav>
   );
