@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { cn } from '~/utils';
 
@@ -9,15 +8,12 @@ type Props = {
 };
 
 const NavLink = ({ href, children }: Props) => {
-  const { asPath } = useRouter();
-  const isActive = asPath.includes(href);
-
   return (
     <li>
       <Link
         className={cn(
-          'transition-colors duration-200 hover:text-mauveText',
-          isActive ? 'hover:primarySolid font-medium text-primarySolid' : '',
+          'text-sm font-medium text-mauveText transition-colors duration-200',
+          'hover:text-mauveTextContrast',
         )}
         href={href}
       >
