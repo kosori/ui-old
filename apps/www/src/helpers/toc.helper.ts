@@ -56,7 +56,6 @@ const getItems = (node: Node, current: TocItem): TocItems => {
 };
 
 const getToc = () => (tree: Node, file: { data: TocItems }) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const table = toc(tree);
   file.data = getItems(table.map, {});
 };
