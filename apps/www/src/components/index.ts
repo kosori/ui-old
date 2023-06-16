@@ -12,3 +12,4 @@ export { default as SiteFeatures } from './SiteFeatures';
 export { default as SiteFooter } from './SiteFooter';
 export { default as SiteHeader } from './SiteHeader';
 export { default as SiteHero } from './SiteHero';
+export { default as SiteTechStack } from './SiteTechStack';
