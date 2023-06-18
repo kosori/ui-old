@@ -1,10 +1,20 @@
-import React from 'react';
+import {
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '~/components/ui/Accordion';
 
-const SiteFAQsItem = () => {
+type Props = {
+  title: string;
+  description: string;
+};
+
+const SiteFAQsItem = ({ title, description }: Props) => {
   return (
-    <div>
-      <p>SiteFAQsItem</p>
-    </div>
+    <AccordionItem value={title}>
+      <AccordionTrigger>{title}</AccordionTrigger>
+      <AccordionContent>{description}</AccordionContent>
+    </AccordionItem>
   );
 };
 
