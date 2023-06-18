@@ -1,10 +1,21 @@
-import React from 'react';
+import { Accordion } from '~/components/ui/Accordion';
+import SiteFAQsItem from './SiteFAQsItem';
 
-const SiteFAQsItems = () => {
+type Props = {
+  faqs: { title: string; description: string }[];
+};
+
+const SiteFAQsItems = ({ faqs }: Props) => {
   return (
-    <div>
-      <p>SiteFAQsItems</p>
-    </div>
+    <Accordion
+      className='w-full space-y-6'
+      defaultValue={faqs.map((faq) => faq.title)}
+      type='multiple'
+    >
+      {faqs.map((faq) => (
+        <SiteFAQsItem key={faq.title} {...faq} />
+      ))}
+    </Accordion>
   );
 };
 
