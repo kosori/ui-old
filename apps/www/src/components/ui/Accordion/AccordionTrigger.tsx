@@ -13,13 +13,13 @@ const AccordionTrigger = forwardRef<Ref, Props>(
       <Trigger
         ref={ref}
         className={cn(
-          'group flex h-10 flex-1 items-center justify-between border-b border-mauveLine px-4 font-medium outline-none',
+          'group flex h-10 flex-1 items-center justify-between px-4 font-medium outline-none',
           className,
         )}
         {...props}
       >
         {children}
-        <ChevronDown className='h-5 w-5 transition-transform ease-in-out group-data-[state=open]:rotate-180' />
+        <ChevronDown className='h-5 w-5 transition-transform duration-200 ease-in-out group-data-[state=open]:rotate-180' />
       </Trigger>
     </Header>
   ),
