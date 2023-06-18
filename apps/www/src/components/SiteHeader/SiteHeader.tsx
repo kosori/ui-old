@@ -7,7 +7,7 @@ import MainNav from './MainNav';
 const SiteHeader = () => {
   return (
     <header className='sticky top-0 z-20 flex h-16 w-full items-center border-b border-mauveLine bg-mauveBase/80 backdrop-blur-lg'>
-      <div className='mx-auto flex w-full max-w-screen-xl justify-between'>
+      <div className='mx-auto grid w-full max-w-screen-xl grid-cols-[1fr_auto_1fr]'>
         <Link className='flex items-center space-x-2 font-bold' href='/'>
           <span className='inline-block h-6 w-6 rounded-full bg-mauve12' />
           <span className='text-lg font-bold'>Zen UI</span>
@@ -15,7 +15,7 @@ const SiteHeader = () => {
 
         <MainNav />
 
-        <div className='flex items-center gap-x-6'>
+        <div className='flex items-center justify-end gap-x-6'>
           <Link
             className='text-mauveText transition-colors duration-200 hover:text-mauveTextContrast'
             href='/'
