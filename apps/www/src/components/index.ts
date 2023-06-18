@@ -8,6 +8,7 @@ export { default as DashboardTableOfContents } from './DashboardTableOfContents'
 export { default as DocsSidebarNav } from './DocsSidebarNav';
 export { default as Mdx } from './Mdx';
 export { default as MdxComponents } from './MdxComponents';
+export { default as SiteFAQs } from './SiteFAQs';
 export { default as SiteFeatures } from './SiteFeatures';
 export { default as SiteFooter } from './SiteFooter';
 export { default as SiteHeader } from './SiteHeader';
