@@ -8,7 +8,15 @@ type Props = React.ComponentPropsWithoutRef<typeof Content>;
 
 const AccordionContent = forwardRef<Ref, Props>(
   ({ className, children, ...props }, ref) => (
-    <Content ref={ref} className={cn('text-mauveText', className)} {...props}>
+    <Content
+      ref={ref}
+      className={cn(
+        'text-mauveText',
+        'data-[disabled]:text-mauveSolid',
+        className,
+      )}
+      {...props}
+    >
       <div className='px-4 pb-2'>{children}</div>
     </Content>
   ),
