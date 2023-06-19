@@ -11,8 +11,10 @@ const AccordionContent = forwardRef<Ref, Props>(
     <Content
       ref={ref}
       className={cn(
-        'text-mauveText',
+        'overflow-hidden text-mauveText',
         'data-[disabled]:text-mauveSolid',
+        'data-[state=closed]:animate-accordion-up',
+        'data-[state=open]:animate-accordion-down',
         className,
       )}
       {...props}
