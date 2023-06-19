@@ -29,7 +29,7 @@ const config = {
       'accordion-up': 'accordion-up 0.2s ease-out',
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
 
 module.exports = config;
