@@ -1,22 +1,20 @@
 import { forwardRef } from 'react';
 import { Cancel } from '@radix-ui/react-alert-dialog';
 
-import { cn } from '~/utils';
+import {
+  buttonStyles,
+  type Props as ButtonProps,
+} from '~/components/ui/Button';
 
 type Ref = React.ElementRef<typeof Cancel>;
-type Props = React.ComponentPropsWithoutRef<typeof Cancel>;
+type CancelProps = React.ComponentPropsWithoutRef<typeof Cancel>;
+interface Props extends CancelProps, ButtonProps { }
 
 const AlertDialogCancel = forwardRef<Ref, Props>(
-  ({ className, ...props }, ref) => (
+  ({ intent = 'secondary', size, className, ...props }, ref) => (
     <Cancel
       ref={ref}
-      className={cn(
-        'h-10 rounded-lg bg-primaryBg px-3 text-sm text-primarySolid transition-colors duration-200',
-        'hover:bg-primaryBgHover',
-        'active:bg-primaryBgActive',
-        'disabled:bg-mauveBg disabled:text-mauveSolid',
-        className,
-      )}
+      className={buttonStyles({ intent, size, class: className })}
       {...props}
     />
   ),

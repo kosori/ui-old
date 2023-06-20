@@ -1,22 +1,20 @@
 import { forwardRef } from 'react';
 import { Action } from '@radix-ui/react-alert-dialog';
 
-import { cn } from '~/utils';
+import {
+  buttonStyles,
+  type Props as ButtonProps,
+} from '~/components/ui/Button';
 
 type Ref = React.ElementRef<typeof Action>;
-type Props = React.ComponentPropsWithoutRef<typeof Action>;
+type ActionProps = React.ComponentPropsWithoutRef<typeof Action>;
+interface Props extends ActionProps, ButtonProps { }
 
 const AlertDialogAction = forwardRef<Ref, Props>(
-  ({ className, ...props }, ref) => (
+  ({ intent = 'primary', size, className, ...props }, ref) => (
     <Action
       ref={ref}
-      className={cn(
-        'trasition-colors h-10 rounded-lg bg-primarySolid px-3 text-sm text-mauveBase duration-200',
-        'hover:bg-primarySolidHover',
-        'active:bg-primaryText',
-        'disabled:bg-primaryLine',
-        className,
-      )}
+      className={buttonStyles({ intent, size, class: className })}
       {...props}
     />
   ),
