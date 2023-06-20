@@ -12,7 +12,7 @@ const badgeStyles = tv({
       default: 'bg-mauveTextContrast',
       info: 'bg-blue9',
       success: 'bg-successSolid',
-      warning: 'bg-warningSolid',
+      warning: 'bg-warningSolid text-mauveTextContrast',
       danger: 'bg-dangerSolid',
     },
   },
