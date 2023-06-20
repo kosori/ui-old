@@ -1,9 +1,7 @@
-const Badge = () => {
-  return (
-    <div>
-      <p>Badge</p>
-    </div>
-  );
+import { Badge } from '~/components/ui/Badge';
+
+const Demo = () => {
+  return <Badge>Badge</Badge>;
 };
 
-export default Badge;
+export default Demo;
