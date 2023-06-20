@@ -8,6 +8,16 @@ const { withContentlayer } = require('next-contentlayer');
 /** @type {import("next").NextConfig} */
 const config = {
   swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: [],
   /** We already do linting and typechecking as separate tasks in CI */
