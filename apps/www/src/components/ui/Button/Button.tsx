@@ -5,7 +5,7 @@ import { cn } from '~/utils';
 
 const buttonStyles = tv({
   base: cn(
-    'flex w-fit items-center leading-none justify-center font-semibold outline-none transition-colors duration-200',
+    'flex w-fit items-center justify-center font-semibold outline-none transition-colors duration-200',
     'focus-visible:ring-4',
     'disabled:cursor-not-allowed',
   ),
@@ -38,8 +38,8 @@ const buttonStyles = tv({
       ),
     },
     size: {
-      'extra-small': 'px-2 py-1 text-[10px] rounded-md gap-x-1',
-      small: 'px-2.5 py-2 text-xs rounded-lg gap-x-1.5',
+      'extra-small': 'px-2 py-1 text-[10px] leading-4 rounded-md gap-x-1',
+      small: 'px-2.5 py-2 text-xs leading-4 rounded-lg gap-x-1.5',
       medium: 'px-3 py-2 text-sm rounded-lg gap-x-2',
       large: 'px-4 py-3 text-md rounded-xl gap-x-2.5',
       'extra-large': 'px-4 py-4 text-lg rounded-xl gap-x-3',
