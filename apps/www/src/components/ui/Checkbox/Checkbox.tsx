@@ -18,7 +18,7 @@ const checkboxStyles = tv({
   variants: {
     shape: {
       square: 'rounded-md',
-      round: 'rounded-full',
+      rounded: 'rounded-full',
     },
     size: {
       small: 'h-4 w-4 p-[2px]',
