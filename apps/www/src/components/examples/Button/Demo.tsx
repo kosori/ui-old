@@ -1,9 +1,7 @@
-const Button = () => {
-  return (
-    <div>
-      <p>Button</p>
-    </div>
-  );
+import { Button } from '~/components/ui/Button';
+
+const Demo = () => {
+  return <Button>Button</Button>;
 };
 
-export default Button;
+export default Demo;
