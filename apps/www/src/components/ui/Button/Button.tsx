@@ -5,7 +5,7 @@ import { cn } from '~/utils';
 
 const buttonStyles = tv({
   base: cn(
-    'flex w-fit items-center justify-center font-semibold outline-none transition-colors duration-200',
+    'flex h-fit w-fit items-center justify-center font-semibold outline-none transition-colors duration-200',
     'focus-visible:ring-4',
     'disabled:cursor-not-allowed',
   ),
@@ -28,12 +28,14 @@ const buttonStyles = tv({
         'bg-mauveBase text-mauveTextContrast border border-mauveBorder',
         'hover:bg-mauveBgSubtle hover:border-mauveBorderHover',
         'active:bg-mauveBg',
+        'focus-visible:ring-mauveFocusRing',
         'disabled:text-mauveSolid disabled:border-mauveLine disabled:bg-mauveBase',
       ),
       quaternary: cn(
         'text-mauveTextContrast',
         'hover:bg-mauveBgHover',
         'active:bg-mauveBgActive',
+        'focus-visible:ring-mauveFocusRing',
         'disabled:bg-transparent disabled:text-mauveSolid',
       ),
     },
@@ -53,7 +55,7 @@ const buttonStyles = tv({
 
 type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
-interface Props extends ButtonProps, ButtonVariants {}
+interface Props extends ButtonProps, ButtonVariants { }
 
 const Button = forwardRef<HTMLButtonElement, Props>(
   ({ intent, size, className, ...props }, ref) => {
