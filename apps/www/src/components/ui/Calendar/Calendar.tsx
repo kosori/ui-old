@@ -16,6 +16,10 @@ const Calendar = ({
     <DayPicker
       className={cn('w-fit', className)}
       classNames={{
+        months: cn(
+          'flex flex-col divide-y divide-mauveBorder',
+          'sm:flex-row sm:divide-x sm:divide-y-0',
+        ),
         month: 'space-y-0',
         caption:
           'h-[72px] flex justify-center border-b border-mauveLine relative items-center',
@@ -41,10 +45,6 @@ const Calendar = ({
         day: cn(
           buttonStyles({ intent: 'quaternary', class: 'h-9 w-10' }),
           'aria-selected:opacity-100',
-        ),
-        months: cn(
-          'flex flex-col divide-y divide-mauveBorder',
-          'sm:flex-row sm:divide-x sm:divide-y-0',
         ),
         day_selected: cn(
           buttonStyles({ intent: 'primary', class: 'h-9 w-10' }),
