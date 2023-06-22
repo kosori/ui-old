@@ -11,7 +11,7 @@ const ContextMenuItem = forwardRef<Ref, Props>(
     <Item
       ref={ref}
       className={cn(
-        'group relative flex h-8 select-none items-center rounded-md px-2 text-sm outline-none transition-colors duration-200',
+        'group relative flex h-8 select-none items-center rounded-lg px-2 text-sm outline-none transition-colors duration-200',
         'focus:bg-primaryBgHover',
         'active:bg-primaryBgActive',
         'data-[disabled]:cursor-not-allowed data-[disabled]:text-mauveSolid',
