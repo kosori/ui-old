@@ -15,7 +15,9 @@ import remarkGfm from 'remark-gfm';
 import { visit } from 'unist-util-visit';
 
 import type { UnistNode, UnistTree } from '~/types';
-import { rehypeComponent, rehypeNpmCommand } from './src/helpers';
+// import { rehypeComponent, rehypeNpmCommand } from './src/helpers';
+import rehypeComponent from './src/helpers/rehypeComponent.helper';
+import rehypeNpmCommand from './src/helpers/rehypeNpmCommand.helper';
 
 const computedFields: ComputedFields = {
   slug: {
@@ -24,7 +26,7 @@ const computedFields: ComputedFields = {
   },
   slugAsParams: {
     type: 'string',
-    resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
+    resolve: (doc) => `${doc._raw.flattenedPath.split('/').slice(1).join('/')}`,
   },
 };
 
