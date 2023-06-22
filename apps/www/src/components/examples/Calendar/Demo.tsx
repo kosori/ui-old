@@ -8,7 +8,7 @@ const Demo = () => {
   return (
     <Calendar
       fixedWeeks
-      className='rounded-md border border-mauveLine'
+      className='rounded-2xl border border-mauveLine'
       mode='single'
       selected={date}
       onSelect={setDate}
