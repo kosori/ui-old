@@ -133,6 +133,9 @@ importers:
       contentlayer:
         specifier: ^0.3.2
         version: 0.3.2(esbuild@0.17.19)
+      date-fns:
+        specifier: ^2.30.0
+        version: 2.30.0
       lucide-react:
         specifier: ^0.139.0
         version: 0.139.0(react@18.2.0)
