@@ -3,7 +3,6 @@ import {
   defineDocumentType,
   defineNestedType,
   makeSource,
-  type ComputedFields,
 } from 'contentlayer/source-files';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
@@ -16,7 +15,7 @@ import { visit } from 'unist-util-visit';
 import rehypeComponent from './src/helpers/rehypeComponent.helper';
 import rehypeNpmCommand from './src/helpers/rehypeNpmCommand.helper';
 
-const computedFields: ComputedFields = {
+const computedFields = {
   slug: {
     type: 'string',
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
