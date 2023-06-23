@@ -1,4 +1,4 @@
-import type { Node } from 'unist-builder';
+import type { Node } from 'unist-builder/lib/index';
 
 export type NpmCommands = {
   __npmCommand__?: string;
