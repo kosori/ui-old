@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { readFileSync } from 'fs';
+// import { readFileSync } from 'fs';
 import {
   defineDocumentType,
   defineNestedType,
@@ -14,8 +13,6 @@ import remarkGfm from 'remark-gfm';
 // import { getHighlighter, loadTheme } from 'shiki';
 import { visit } from 'unist-util-visit';
 
-import type { UnistNode, UnistTree } from '~/types';
-// import { rehypeComponent, rehypeNpmCommand } from './src/helpers';
 import rehypeComponent from './src/helpers/rehypeComponent.helper';
 import rehypeNpmCommand from './src/helpers/rehypeNpmCommand.helper';
 
@@ -85,8 +82,8 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
       rehypeComponent,
-      () => (tree: UnistTree) => {
-        visit(tree, (node: UnistNode) => {
+      () => (tree) => {
+        visit(tree, (node) => {
           if (node?.type === 'element' && node?.tagName === 'pre') {
             const [codeEl] = node.children;
 
@@ -140,8 +137,8 @@ export default makeSource({
           },
         },
       ],
-      () => (tree: UnistTree) => {
-        visit(tree, (node: UnistNode) => {
+      () => (tree) => {
+        visit(tree, (node) => {
           if (node?.type === 'element' && node?.tagName === 'div') {
             if (!('data-rehype-pretty-code-fragment' in node.properties))
               return;
