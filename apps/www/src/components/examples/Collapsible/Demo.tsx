@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronsUpDown } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 import { Button } from '~/components/ui/Button';
 import {
@@ -7,6 +7,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '~/components/ui/Collapsible';
+import { cn } from '~/utils';
 
 const Demo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,12 @@ const Demo = () => {
         </h4>
         <CollapsibleTrigger asChild>
           <Button className='p-[9px]' intent='secondary' size='small'>
-            <ChevronsUpDown className='h-4 w-4' />
+            <Plus
+              className={cn(
+                'h-4 w-4 transition-transform duration-200',
+                isOpen ? 'rotate-45' : 'rotate-0',
+              )}
+            />
             <span className='sr-only'>Toggle</span>
           </Button>
         </CollapsibleTrigger>
