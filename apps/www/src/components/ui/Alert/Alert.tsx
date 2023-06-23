@@ -21,7 +21,7 @@ const alertStyles = tv({
 
 type AlertProps = React.HTMLAttributes<HTMLDivElement>;
 type AlertVariants = VariantProps<typeof alertStyles>;
-interface Props extends AlertProps, AlertVariants { }
+interface Props extends AlertProps, AlertVariants {}
 
 const Alert = forwardRef<HTMLDivElement, Props>(
   ({ className, intent, ...props }, ref) => (

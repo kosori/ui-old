@@ -23,7 +23,7 @@ const badgeStyles = tv({
 
 type BadgeProps = React.ComponentPropsWithoutRef<'div'>;
 type BadgeVariants = VariantProps<typeof badgeStyles>;
-interface Props extends BadgeProps, BadgeVariants { }
+interface Props extends BadgeProps, BadgeVariants {}
 
 const Badge = forwardRef<HTMLDivElement, Props>(
   ({ intent, className, ...props }, ref) => (

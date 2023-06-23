@@ -8,7 +8,7 @@ import {
 
 type Ref = React.ElementRef<typeof Cancel>;
 type CancelProps = React.ComponentPropsWithoutRef<typeof Cancel>;
-interface Props extends CancelProps, ButtonProps { }
+interface Props extends CancelProps, ButtonProps {}
 
 const AlertDialogCancel = forwardRef<Ref, Props>(
   ({ intent = 'secondary', size, className, ...props }, ref) => (

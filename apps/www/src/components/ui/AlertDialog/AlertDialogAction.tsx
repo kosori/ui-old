@@ -8,7 +8,7 @@ import {
 
 type Ref = React.ElementRef<typeof Action>;
 type ActionProps = React.ComponentPropsWithoutRef<typeof Action>;
-interface Props extends ActionProps, ButtonProps { }
+interface Props extends ActionProps, ButtonProps {}
 
 const AlertDialogAction = forwardRef<Ref, Props>(
   ({ intent = 'primary', size, className, ...props }, ref) => (
