@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '~/components/ui/Accordion';
 import SiteFAQsItems from './SiteFAQsItems';
 
 const faqs = [
