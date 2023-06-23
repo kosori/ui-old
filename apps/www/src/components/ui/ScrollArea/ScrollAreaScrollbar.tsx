@@ -17,7 +17,7 @@ const ScrollAreaScrollbar = forwardRef<Ref, Props>(
         'flex touch-none select-none transition-colors',
         orientation === 'vertical' &&
           'h-full w-2.5 border-l border-l-transparent p-px',
-        orientation === 'horizonal' &&
+        orientation === 'horizontal' &&
           'h-2.5 border-t border-t-transparent p-px',
         className,
       )}
