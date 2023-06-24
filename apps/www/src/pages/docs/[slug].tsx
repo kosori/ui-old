@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { type GetStaticProps, type NextPage } from 'next';
 import Link from 'next/link';
-import { allDocs } from 'contentlayer/generated';
+import { allDocs, type Doc } from 'contentlayer/generated';
 
 import {
   Breadcrumb,
@@ -14,7 +14,6 @@ import { docsConfig } from '~/config';
 import { getTableOfContents } from '~/helpers';
 import type { TocItems } from '~/types';
 import { cn } from '~/utils';
-import type { Doc } from '.contentlayer/generated';
 
 export const getStaticPaths = () => {
   const paths = allDocs.map((doc) => ({
