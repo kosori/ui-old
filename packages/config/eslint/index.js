@@ -8,6 +8,7 @@ const config = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
+    'plugin:storybook/recommended',
   ],
   rules: {
     '@next/next/no-html-link-for-pages': 'off',
