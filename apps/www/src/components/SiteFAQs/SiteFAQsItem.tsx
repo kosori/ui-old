@@ -11,7 +11,7 @@ type Props = {
 
 const SiteFAQsItem = ({ title, description }: Props) => {
   return (
-    <AccordionItem value={title}>
+    <AccordionItem className='py-2' value={title}>
       <AccordionTrigger>{title}</AccordionTrigger>
       <AccordionContent>{description}</AccordionContent>
     </AccordionItem>

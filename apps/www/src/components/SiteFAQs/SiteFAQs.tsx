@@ -33,11 +33,8 @@ const SiteFAQs = () => {
         </p>
       </div>
 
-      <div className='mx-auto grid w-full max-w-4xl grid-cols-2 gap-6'>
-        <SiteFAQsItems faqs={faqs.slice(0, Math.ceil(faqs.length / 2))} />
-        <SiteFAQsItems
-          faqs={faqs.slice(Math.ceil(faqs.length / 2), faqs.length)}
-        />
+      <div className='mx-auto grid w-full max-w-4xl gap-6 px-10'>
+        <SiteFAQsItems faqs={faqs} />
       </div>
     </div>
   );
