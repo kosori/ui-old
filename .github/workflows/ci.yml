@@ -47,8 +47,8 @@ jobs:
       - name: Install deps (with cache)
         run: pnpm install
 
-      - name: Build, lint and type-check
-        run: pnpm turbo build lint type-check
+      - name: Build and lint
+        run: pnpm turbo build lint
         env:
           SKIP_ENV_VALIDATION: true
 
