@@ -33,7 +33,7 @@ const SiteFAQs = () => {
         </p>
       </div>
 
-      <div className='mx-auto grid w-full max-w-4xl gap-6 px-10'>
+      <div className='mx-auto grid w-full max-w-screen-md gap-6 px-10'>
         <SiteFAQsItems faqs={faqs} />
       </div>
     </div>
