@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { Github, Sun, Twitter } from 'lucide-react';
+import { Github, Twitter } from 'lucide-react';
 
-import { Button } from '~/components/ui/Button';
 import MainNav from './MainNav';
+import ToggleTheme from './ToggleTheme';
 
 const SiteHeader = () => {
   return (
@@ -29,9 +29,7 @@ const SiteHeader = () => {
             <Twitter className='h-5 w-5' />
           </Link>
 
-          <Button className='p-[11px]' intent='tertiary'>
-            <Sun className='h-[18px] w-[18px]' />
-          </Button>
+          <ToggleTheme />
         </div>
       </div>
     </header>
