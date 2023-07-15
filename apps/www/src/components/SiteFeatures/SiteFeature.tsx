@@ -4,7 +4,7 @@ type Props = {
 
 export const SiteFeature = ({ children }: Props) => {
   return (
-    <article className='border-greyLine space-y-1 rounded-2xl border px-4 pb-5 pt-4 shadow'>
+    <article className='space-y-1 rounded-2xl border border-greyLine px-4 pb-5 pt-4 shadow'>
       {children}
     </article>
   );

@@ -34,7 +34,7 @@ const checkboxStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof Root>;
 type CheckboxVariants = VariantProps<typeof checkboxStyles>;
-interface Props extends CheckboxProps, CheckboxVariants { }
+interface Props extends CheckboxProps, CheckboxVariants {}
 
 const Checkbox = forwardRef<Ref, Props>(
   ({ shape, size, className, ...props }, ref) => (

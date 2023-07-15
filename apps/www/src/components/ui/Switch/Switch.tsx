@@ -36,7 +36,7 @@ const switchStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type SwitchProps = React.ComponentPropsWithoutRef<typeof Root>;
 type SwitchVariants = VariantProps<typeof switchStyles>;
-interface Props extends SwitchProps, SwitchVariants { }
+interface Props extends SwitchProps, SwitchVariants {}
 
 const Switch = forwardRef<Ref, Props>(({ size, className, ...props }, ref) => (
   <Root

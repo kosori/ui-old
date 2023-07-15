@@ -163,9 +163,9 @@ const MdxComponents = {
     <>
       <pre
         className={cn(
-          'border-greyLine bg-greyBgSubtle mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4',
+          'mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border border-greyLine bg-greyBgSubtle py-4',
           // 'data-[theme=dark]:bg-greyTextContrast data-[theme=light]:bg-greyBase',
-          '[&_code]:bg-greyBgSubtle [&_code]:border-none',
+          '[&_code]:border-none [&_code]:bg-greyBgSubtle',
           className,
         )}
         {...props}
@@ -194,7 +194,7 @@ const MdxComponents = {
   code: ({ className, ...props }: HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        'border-greyLine bg-greyBgHover relative rounded-md border px-[0.25rem] py-[0.12rem] font-mono text-sm',
+        'relative rounded-md border border-greyLine bg-greyBgHover px-[0.25rem] py-[0.12rem] font-mono text-sm',
         className,
       )}
       {...props}

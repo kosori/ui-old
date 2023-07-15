@@ -14,7 +14,7 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
       <span
         className={cn(
           'flex w-full cursor-not-allowed items-center rounded-md p-2',
-          item.disabled && 'text-greyText cursor-not-allowed',
+          item.disabled && 'cursor-not-allowed text-greyText',
         )}
       >
         {item.title}
@@ -37,12 +37,12 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
       className={cn(
         'mouse-pointer relative w-full items-center rounded-md px-5 py-1.5 text-sm transition-colors duration-200',
         'hover:bg-primaryBgHover',
-        item.disabled && 'text-greyText cursor-not-allowed',
+        item.disabled && 'cursor-not-allowed text-greyText',
         pathname?.includes(item.href || '')
           ? cn(
-            'text-greyTextContrast bg-primaryBgActive',
-            'hover:bg-primaryBgActive',
-          )
+              'bg-primaryBgActive text-greyTextContrast',
+              'hover:bg-primaryBgActive',
+            )
           : 'text-greyText',
       )}
       href={item.href || '#'}
@@ -53,7 +53,7 @@ const DocsSidebarNavItem = ({ item, pathname }: Props) => {
       {item.label && (
         <span
           className={cn(
-            'bg-greyBg text-greyTextContrast rounded-md px-1.5 py-0.5 no-underline',
+            'rounded-md bg-greyBg px-1.5 py-0.5 text-greyTextContrast no-underline',
             'group-hover:no-underline',
           )}
         >

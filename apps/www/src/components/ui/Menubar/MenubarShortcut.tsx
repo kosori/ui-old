@@ -5,7 +5,7 @@ type Props = React.HTMLAttributes<HTMLSpanElement>;
 const MenubarShortcut = ({ className, ...props }: Props) => (
   <span
     className={cn(
-      'text-greyText ml-auto text-xs',
+      'ml-auto text-xs text-greyText',
       'group-data-[disabled]:text-greySolid',
       className,
     )}

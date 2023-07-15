@@ -24,10 +24,7 @@ const RadioGroupItem = forwardRef<Ref, Props>(
     >
       <Indicator className='flex items-center justify-center'>
         <Circle
-          className={cn(
-            'h-2 w-2 fill-greyBase',
-            'group-disabled:fill-greyBg',
-          )}
+          className={cn('h-2 w-2 fill-greyBase', 'group-disabled:fill-greyBg')}
         />
       </Indicator>
     </Item>

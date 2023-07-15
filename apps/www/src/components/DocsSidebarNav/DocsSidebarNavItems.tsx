@@ -17,7 +17,7 @@ const DocsSidebarNavItems = ({ items, pathname }: Props) => {
         />
       ))}
 
-      <div className='bg-greyLine absolute left-2 top-0 h-full w-px' />
+      <div className='absolute left-2 top-0 h-full w-px bg-greyLine' />
     </div>
   );
 };

@@ -4,7 +4,7 @@ const SiteFooter = () => {
   return (
     <footer className='flex h-12 items-center'>
       <div className='mx-auto w-full max-w-screen-xl text-center'>
-        <p className='text-greyText text-sm'>
+        <p className='text-sm text-greyText'>
           Created by{' '}
           <Link
             className='text-primarySolid transition-colors duration-200 hover:text-primarySolidHover'

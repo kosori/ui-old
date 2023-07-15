@@ -55,7 +55,7 @@ const buttonStyles = tv({
 
 type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
-interface Props extends ButtonProps, ButtonVariants { }
+interface Props extends ButtonProps, ButtonVariants {}
 
 const Button = forwardRef<HTMLButtonElement, Props>(
   ({ intent, size, className, ...props }, ref) => {

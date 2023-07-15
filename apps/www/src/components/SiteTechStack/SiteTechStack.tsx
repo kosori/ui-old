@@ -5,7 +5,7 @@ const SiteTechStack = () => {
     <div className='mt-52 grid gap-y-10'>
       <div className='space-y-2 text-center'>
         <h2 className='text-3xl font-semibold'>Our tech stack</h2>
-        <p className='text-greyText text-lg'>
+        <p className='text-lg text-greyText'>
           The tools that make this possible.
         </p>
       </div>

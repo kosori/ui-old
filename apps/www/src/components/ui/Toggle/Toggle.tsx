@@ -37,7 +37,7 @@ const toggleStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type ToggleProps = React.ComponentPropsWithoutRef<typeof Root>;
 type ToggleVariants = VariantProps<typeof toggleStyles>;
-interface Props extends ToggleProps, ToggleVariants { }
+interface Props extends ToggleProps, ToggleVariants {}
 
 const Toggle = forwardRef<Ref, Props>(
   ({ className, intent, size, ...props }, ref) => (

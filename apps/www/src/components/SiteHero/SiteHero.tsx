@@ -9,7 +9,7 @@ const SiteHero = () => {
       <h1 className='text-5xl font-bold leading-none'>
         Build high quality and <br /> accessible apps in a short time.
       </h1>
-      <p className='text-greyText mt-4 text-xl'>
+      <p className='mt-4 text-xl text-greyText'>
         Accessible. Customizable. Open source.
       </p>
 
