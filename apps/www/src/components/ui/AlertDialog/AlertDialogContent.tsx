@@ -15,7 +15,7 @@ const AlertDialogContent = forwardRef<Ref, Props>(
       <Content
         ref={ref}
         className={cn(
-          'fixed inset-1/2 z-50 grid h-fit w-full max-w-lg -translate-x-1/2 -translate-y-1/2 scale-100 gap-4 bg-mauveBase p-6 opacity-100 sm:rounded-lg md:w-full',
+          'fixed inset-1/2 z-50 grid h-fit w-full max-w-lg -translate-x-1/2 -translate-y-1/2 scale-100 gap-4 bg-greyBase p-6 opacity-100 sm:rounded-lg md:w-full',
           className,
         )}
         {...props}

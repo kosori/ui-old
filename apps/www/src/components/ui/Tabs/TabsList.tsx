@@ -10,7 +10,7 @@ const TabsList = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <List
     ref={ref}
     className={cn(
-      'inline-flex h-10 items-center justify-center rounded-md bg-mauveBg p-1 text-mauveText',
+      'inline-flex h-10 items-center justify-center rounded-md bg-greyBg p-1 text-greyText',
       className,
     )}
     {...props}

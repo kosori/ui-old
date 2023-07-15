@@ -10,7 +10,7 @@ const SelectLabel = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <Label
     ref={ref}
     className={cn(
-      'flex h-8 items-center pl-8 pr-2 text-xs font-medium text-mauveText',
+      'flex h-8 items-center pl-8 pr-2 text-xs font-medium text-greyText',
       className,
     )}
     {...props}

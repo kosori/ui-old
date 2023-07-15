@@ -11,7 +11,7 @@ const AvatarFallback = forwardRef<Ref, Props>(
     <Fallback
       ref={ref}
       className={cn(
-        'flex h-full w-full items-center justify-center bg-mauveBgSubtle',
+        'flex h-full w-full items-center justify-center bg-greyBgSubtle',
         className,
       )}
       {...props}

@@ -9,7 +9,7 @@ type Props = {
 
 const BreadcrumbSeparator = ({ type = 'slash', className }: Props) => {
   return (
-    <span className={cn('text-mauve11', className)}>
+    <span className={cn('text-grey11', className)}>
       {type === 'slash' && '/'}
       {type === 'vertical-bar' && '|'}
       {type === 'chevron' && <ChevronRight className='h-4 w-4' />}

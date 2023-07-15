@@ -8,10 +8,10 @@ const switchStyles = tv({
   base: cn(
     'peer inline-flex cursor-pointer items-center rounded-full border-2 border-transparent outline-none transition-colors',
     'focus-visible:ring-4',
-    'disabled:cursor-not-allowed disabled:bg-mauveBgSubtle',
-    'data-[state=unchecked]:bg-mauveLine',
+    'disabled:cursor-not-allowed disabled:bg-greyBgSubtle',
+    'data-[state=unchecked]:bg-greyLine',
     'data-[state=checked]:bg-primarySolid',
-    'data-[state=unchecked]:focus-visible:ring-mauveFocusRing',
+    'data-[state=unchecked]:focus-visible:ring-greyFocusRing',
     'data-[state=checked]:focus-visible:ring-primaryFocusRing',
   ),
   variants: {
@@ -36,7 +36,7 @@ const switchStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type SwitchProps = React.ComponentPropsWithoutRef<typeof Root>;
 type SwitchVariants = VariantProps<typeof switchStyles>;
-interface Props extends SwitchProps, SwitchVariants {}
+interface Props extends SwitchProps, SwitchVariants { }
 
 const Switch = forwardRef<Ref, Props>(({ size, className, ...props }, ref) => (
   <Root
@@ -46,7 +46,7 @@ const Switch = forwardRef<Ref, Props>(({ size, className, ...props }, ref) => (
   >
     <Thumb
       className={cn(
-        'pointer-events-none block rounded-full bg-mauveBase shadow-lg transition-transform',
+        'pointer-events-none block rounded-full bg-greyBase shadow-lg transition-transform',
         'data-[state=unchecked]:translate-x-0',
       )}
     />

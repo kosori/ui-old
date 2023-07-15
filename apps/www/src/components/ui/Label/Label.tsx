@@ -11,7 +11,7 @@ const Label = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
     ref={ref}
     className={cn(
       'text-md font-medium',
-      'peer-disabled:cursor-not-allowed peer-disabled:text-mauveSolid',
+      'peer-disabled:cursor-not-allowed peer-disabled:text-greySolid',
       className,
     )}
     {...props}

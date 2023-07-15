@@ -120,7 +120,7 @@ const MdxComponents = {
   ),
   tr: ({ className, ...props }: HTMLAttributes<HTMLTableRowElement>) => (
     <tr
-      className={cn('m-0 border-t p-0', 'even:bg-mauveBgSubtle', className)}
+      className={cn('m-0 border-t p-0', 'even:bg-greyBgSubtle', className)}
       {...props}
     />
   ),
@@ -163,9 +163,9 @@ const MdxComponents = {
     <>
       <pre
         className={cn(
-          'mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border border-mauveLine bg-mauveBgSubtle py-4',
-          // 'data-[theme=dark]:bg-mauveTextContrast data-[theme=light]:bg-mauveBase',
-          '[&_code]:border-none [&_code]:bg-mauveBgSubtle',
+          'border-greyLine bg-greyBgSubtle mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4',
+          // 'data-[theme=dark]:bg-greyTextContrast data-[theme=light]:bg-greyBase',
+          '[&_code]:bg-greyBgSubtle [&_code]:border-none',
           className,
         )}
         {...props}
@@ -194,7 +194,7 @@ const MdxComponents = {
   code: ({ className, ...props }: HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        'relative rounded-md border border-mauveLine bg-mauveBgHover px-[0.25rem] py-[0.12rem] font-mono text-sm',
+        'border-greyLine bg-greyBgHover relative rounded-md border px-[0.25rem] py-[0.12rem] font-mono text-sm',
         className,
       )}
       {...props}

@@ -4,7 +4,7 @@ type Props = {
 
 export const SiteFeature = ({ children }: Props) => {
   return (
-    <article className='space-y-1 rounded-2xl border border-mauveLine px-4 pb-5 pt-4 shadow'>
+    <article className='border-greyLine space-y-1 rounded-2xl border px-4 pb-5 pt-4 shadow'>
       {children}
     </article>
   );
@@ -15,5 +15,5 @@ export const SiteFeatureTitle = ({ children }: Props) => {
 };
 
 export const SiteFeatureDescription = ({ children }: Props) => {
-  return <p className='text-md text-mauveText'>{children}</p>;
+  return <p className='text-md text-greyText'>{children}</p>;
 };

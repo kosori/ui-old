@@ -14,7 +14,7 @@ const Separator = forwardRef<Ref, Props>(
     <Root
       ref={ref}
       className={cn(
-        'shrink-0 bg-mauveLine',
+        'shrink-0 bg-greyLine',
         orientation === 'horizontal' ? 'h-px w-full' : 'h-full w-px',
         className,
       )}

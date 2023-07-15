@@ -17,7 +17,7 @@ const DialogContent = forwardRef<Ref, Props>(
       <Content
         ref={ref}
         className={cn(
-          'fixed z-50 grid w-full gap-8 border border-mauveLine bg-mauveBase p-6 shadow-lg',
+          'fixed z-50 grid w-full gap-8 border border-greyLine bg-greyBase p-6 shadow-lg',
           'sm:max-w-lg sm:rounded-lg',
           className,
         )}
@@ -27,9 +27,9 @@ const DialogContent = forwardRef<Ref, Props>(
 
         <Close
           className={cn(
-            'absolute right-4 top-4 rounded ring-offset-mauveBg transition-opacity',
+            'absolute right-4 top-4 rounded ring-offset-greyBg transition-opacity',
             'focus:outline focus:outline-primaryFocusRing',
-            'disabled:cursor-not-allowed disabled:text-mauveText',
+            'disabled:cursor-not-allowed disabled:text-greyText',
           )}
         >
           <X className='h-4 w-4' />

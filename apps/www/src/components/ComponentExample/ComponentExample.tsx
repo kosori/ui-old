@@ -54,8 +54,8 @@ const ComponentExample = ({
           <TabsList className='w-full justify-start rounded-none border-b bg-transparent p-0'>
             <TabsTrigger
               className={cn(
-                'rounded-nonde relative border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-mauveText shadow-none transition-none',
-                'data-[state=active]:border-b-mauveLine data-[state=active]:text-mauveTextContrast data-[state=active]:shadow-none',
+                'rounded-nonde text-greyText relative border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold shadow-none transition-none',
+                'data-[state=active]:border-b-greyLine data-[state=active]:text-greyTextContrast data-[state=active]:shadow-none',
               )}
               value='preview'
             >
@@ -64,8 +64,8 @@ const ComponentExample = ({
 
             <TabsTrigger
               className={cn(
-                'rounded-nonde relative border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-mauveText shadow-none transition-none',
-                'data-[state=active]:border-b-mauveLine data-[state=active]:text-mauveTextContrast data-[state=active]:shadow-none',
+                'rounded-nonde text-greyText relative border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold shadow-none transition-none',
+                'data-[state=active]:border-b-greyLine data-[state=active]:text-greyTextContrast data-[state=active]:shadow-none',
               )}
               value='code'
             >

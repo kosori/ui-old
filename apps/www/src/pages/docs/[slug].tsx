@@ -89,7 +89,7 @@ const Docs: NextPage<Props> = ({ doc, toc }) => {
             <h1 className='scroll-m-20 text-4xl font-bold'>{doc.title}</h1>
 
             {doc.description && (
-              <p className='text-lg text-mauveText'>{doc.description}</p>
+              <p className='text-greyText text-lg'>{doc.description}</p>
             )}
           </div>
 

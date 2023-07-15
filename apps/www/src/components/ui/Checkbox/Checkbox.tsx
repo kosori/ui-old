@@ -7,13 +7,13 @@ import { cn } from '~/utils';
 
 const checkboxStyles = tv({
   base: cn(
-    'group peer border border-mauveBorder bg-mauveBase outline-none transition-colors duration-200',
-    'hover:border-mauveBorderHover',
-    'focus-visible:ring-4 focus-visible:ring-mauveFocusRing',
-    'disabled:cursor-not-allowed disabled:border-0 disabled:bg-mauveLine',
+    'group peer border border-greyBorder bg-greyBase outline-none transition-colors duration-200',
+    'hover:border-greyBorderHover',
+    'focus-visible:ring-4 focus-visible:ring-greyFocusRing',
+    'disabled:cursor-not-allowed disabled:border-0 disabled:bg-greyLine',
     'data-[state=checked]:border-0 data-[state=checked]:bg-primarySolid',
     'data-[state=checked]:focus-visible:ring-primaryFocusRing',
-    'data-[state=checked]:disabled:border-0 data-[state=checked]:disabled:bg-mauveLine',
+    'data-[state=checked]:disabled:border-0 data-[state=checked]:disabled:bg-greyLine',
   ),
   variants: {
     shape: {
@@ -34,7 +34,7 @@ const checkboxStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof Root>;
 type CheckboxVariants = VariantProps<typeof checkboxStyles>;
-interface Props extends CheckboxProps, CheckboxVariants {}
+interface Props extends CheckboxProps, CheckboxVariants { }
 
 const Checkbox = forwardRef<Ref, Props>(
   ({ shape, size, className, ...props }, ref) => (
@@ -44,7 +44,7 @@ const Checkbox = forwardRef<Ref, Props>(
       {...props}
     >
       <Indicator className={cn('flex items-center justify-center')}>
-        <Check className='h-full w-full text-mauveBase group-disabled:text-mauveSolid' />
+        <Check className='h-full w-full text-greyBase group-disabled:text-greySolid' />
       </Indicator>
     </Root>
   ),

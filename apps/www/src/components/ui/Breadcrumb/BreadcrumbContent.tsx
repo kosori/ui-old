@@ -22,8 +22,8 @@ const BreadcrumbContent = ({
       className={cn(
         'hover:text-primarySolid',
         isActive
-          ? cn('text-mauveTextContrast', 'hover:text-mauveTextContrast')
-          : 'text-mauveText',
+          ? cn('text-greyTextContrast', 'hover:text-greyTextContrast')
+          : 'text-greyText',
         className,
       )}
       href={href}

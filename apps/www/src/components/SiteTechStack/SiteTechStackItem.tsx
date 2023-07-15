@@ -15,5 +15,5 @@ export const SiteTechStackItemTitle = ({ children }: Props) => {
 };
 
 export const SiteTechStackItemDescription = ({ children }: Props) => {
-  return <p className='text-md text-mauveText'>{children}</p>;
+  return <p className='text-md text-greyText'>{children}</p>;
 };

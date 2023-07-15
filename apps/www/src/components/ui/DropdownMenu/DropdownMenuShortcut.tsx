@@ -5,8 +5,8 @@ type Props = React.HTMLAttributes<HTMLSpanElement>;
 const DropdownMenuShortcut = ({ className, ...props }: Props) => (
   <span
     className={cn(
-      'ml-auto text-xs text-mauveText',
-      'group-data-[disabled]:text-mauveSolid',
+      'text-greyText ml-auto text-xs',
+      'group-data-[disabled]:text-greySolid',
       className,
     )}
     {...props}

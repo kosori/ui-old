@@ -12,8 +12,8 @@ const TabsTrigger = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
     className={cn(
       'inline-flex h-8 items-center justify-center whitespace-nowrap rounded-md px-3 text-sm font-medium transition-all',
       'focus-visible:outline focus-visible:outline-primaryFocusRing',
-      'disabled:cursor-not-allowed disabled:text-mauveSolid',
-      'data-[state=active]:bg-mauveBase data-[state=active]:text-mauveTextContrast data-[state=active]:shadow-sm',
+      'disabled:cursor-not-allowed disabled:text-greySolid',
+      'data-[state=active]:bg-greyBase data-[state=active]:text-greyTextContrast data-[state=active]:shadow-sm',
       className,
     )}
     {...props}

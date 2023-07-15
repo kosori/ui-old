@@ -17,12 +17,12 @@ const Calendar = ({
       className={cn('w-fit', className)}
       classNames={{
         months: cn(
-          'flex flex-col divide-y divide-mauveBorder',
+          'flex flex-col divide-y divide-greyBorder',
           'sm:flex-row sm:divide-x sm:divide-y-0',
         ),
         month: 'space-y-0',
         caption:
-          'h-[72px] flex justify-center border-b border-mauveLine relative items-center',
+          'h-[72px] flex justify-center border-b border-greyLine relative items-center',
         caption_label: 'text-sm font-medium',
         nav: 'flex items-center',
         nav_button_previous: 'absolute left-4',
@@ -34,7 +34,7 @@ const Calendar = ({
         table: 'w-full px-4 inline-block',
         head_row: 'flex',
         head_cell:
-          'text-mauveText flex items-center justify-center w-10 h-9 font-normal text-sm',
+          'text-greyText flex items-center justify-center w-10 h-9 font-normal text-sm',
         row: 'flex w-full',
         cell: cn(
           '[&:has([aria-selected])]:bg-primarySolid',
@@ -48,13 +48,13 @@ const Calendar = ({
         ),
         day_selected: cn(
           buttonStyles({ intent: 'primary', class: 'h-9 w-10' }),
-          '!text-mauveBase',
+          '!text-greyBase',
         ),
         day_today: buttonStyles({ intent: 'secondary', class: 'h-9 w-10' }),
-        day_outside: 'text-mauveText opacity-50',
-        day_disabled: 'text-mauveText opacity-50',
+        day_outside: 'text-greyText opacity-50',
+        day_disabled: 'text-greyText opacity-50',
         day_range_middle:
-          'aria-selected:bg-primarySolid aria-selected:mauveBase',
+          'aria-selected:bg-primarySolid aria-selected:greyBase',
         day_hidden: 'invisible',
         ...classNames,
       }}

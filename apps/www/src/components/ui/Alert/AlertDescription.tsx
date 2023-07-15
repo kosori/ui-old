@@ -7,7 +7,7 @@ type Props = React.HTMLAttributes<HTMLParagraphElement>;
 
 const AlertDescription = forwardRef<Ref, Props>(
   ({ className, ...props }, ref) => (
-    <p ref={ref} className={cn('text-mauveText', className)} {...props} />
+    <p ref={ref} className={cn('text-greyText', className)} {...props} />
   ),
 );
 

@@ -4,10 +4,10 @@ import { tv, type VariantProps } from 'tailwind-variants';
 import { cn } from '~/utils';
 
 const alertStyles = tv({
-  base: cn('relative shadow w-full rounded-xl bg-mauveBase border p-4'),
+  base: cn('relative shadow w-full rounded-xl bg-greyBase border p-4'),
   variants: {
     intent: {
-      default: cn('text-mauveTextContrast border-mauveLine'),
+      default: cn('text-greyTextContrast border-greyLine'),
       info: cn('text-infoSolid border-infoLine'),
       success: cn('text-successSolid border-successLine'),
       warning: cn('text-warningSolid border-warningLine'),
@@ -21,7 +21,7 @@ const alertStyles = tv({
 
 type AlertProps = React.HTMLAttributes<HTMLDivElement>;
 type AlertVariants = VariantProps<typeof alertStyles>;
-interface Props extends AlertProps, AlertVariants {}
+interface Props extends AlertProps, AlertVariants { }
 
 const Alert = forwardRef<HTMLDivElement, Props>(
   ({ className, intent, ...props }, ref) => (

@@ -11,7 +11,7 @@ const ContextMenuLabel = forwardRef<Ref, Props>(
     <Label
       ref={ref}
       className={cn(
-        'flex h-8 items-center px-2 text-xs font-medium text-mauveText',
+        'flex h-8 items-center px-2 text-xs font-medium text-greyText',
         inset && 'pl-8',
         className,
       )}

@@ -14,7 +14,7 @@ const AccordionTrigger = forwardRef<Ref, Props>(
         ref={ref}
         className={cn(
           'group flex h-10 flex-1 items-center justify-between px-4 font-medium outline-none',
-          'data-[disabled]:text-mauveSolid',
+          'data-[disabled]:text-greySolid',
           className,
         )}
         {...props}

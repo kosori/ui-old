@@ -32,8 +32,8 @@ const CopyButton = ({ value, className, event, ...props }: Props) => {
   return (
     <button
       className={cn(
-        'relative z-20 inline-flex h-6 w-6 items-center justify-center rounded-md border bg-mauveBase text-sm font-medium transition-colors',
-        'hover:bg-mauveBgHover',
+        'bg-greyBase relative z-20 inline-flex h-6 w-6 items-center justify-center rounded-md border text-sm font-medium transition-colors',
+        'hover:bg-greyBgHover',
         'focus:outline-none',
         className,
       )}

@@ -12,7 +12,7 @@ const NavigationMenuViewport = forwardRef<Ref, Props>(
       <Viewport
         ref={ref}
         className={cn(
-          'origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-lg border border-mauveLine bg-mauveBase shadow-md',
+          'origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-lg border border-greyLine bg-greyBase shadow-md',
           'md:w-[var(--radix-navigation-menu-viewport-width)]',
           className,
         )}

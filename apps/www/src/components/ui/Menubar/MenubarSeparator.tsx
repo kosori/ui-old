@@ -10,7 +10,7 @@ const MenubarSeparator = forwardRef<Ref, Props>(
   ({ className, ...props }, ref) => (
     <Separator
       ref={ref}
-      className={cn('-mx-1 my-1 h-px bg-mauveLine', className)}
+      className={cn('-mx-1 my-1 h-px bg-greyLine', className)}
       {...props}
     />
   ),

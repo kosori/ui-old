@@ -12,7 +12,7 @@ const SelectContent = forwardRef<Ref, Props>(
       <Content
         ref={ref}
         className={cn(
-          'relative z-50 min-w-[8rem] overflow-hidden rounded-lg border border-mauveLine bg-mauveBase shadow-md',
+          'relative z-50 min-w-[8rem] overflow-hidden rounded-lg border border-greyLine bg-greyBase shadow-md',
           position === 'popper' && 'translate-y-1',
           className,
         )}
@@ -23,7 +23,7 @@ const SelectContent = forwardRef<Ref, Props>(
           className={cn(
             'p-1',
             position === 'popper' &&
-              'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
+            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
           )}
         >
           {children}

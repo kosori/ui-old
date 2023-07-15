@@ -12,8 +12,8 @@ const NavLink = ({ href, children }: Props) => {
     <li>
       <Link
         className={cn(
-          'text-md font-medium text-mauveText transition-colors duration-200',
-          'hover:text-mauveTextContrast',
+          'text-md text-greyText font-medium transition-colors duration-200',
+          'hover:text-greyTextContrast',
         )}
         href={href}
       >

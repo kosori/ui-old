@@ -11,7 +11,7 @@ const toggleStyles = tv({
     'hover:bg-primaryBgHover',
     'active:bg-primaryBgActive',
     'focus-visible:outline focus-visible:outline-primaryFocusRing',
-    'disabled:cursor-not-allowed disabled:text-mauveSolid',
+    'disabled:cursor-not-allowed disabled:text-greySolid',
   ),
   variants: {
     intent: {
@@ -19,7 +19,7 @@ const toggleStyles = tv({
       outline: cn(
         'border border-primaryBorder',
         'border-primaryBorderHover',
-        'disabled:border-mauveLine disabled:bg-mauveBg',
+        'disabled:border-greyLine disabled:bg-greyBg',
       ),
     },
     size: {
@@ -37,7 +37,7 @@ const toggleStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type ToggleProps = React.ComponentPropsWithoutRef<typeof Root>;
 type ToggleVariants = VariantProps<typeof toggleStyles>;
-interface Props extends ToggleProps, ToggleVariants {}
+interface Props extends ToggleProps, ToggleVariants { }
 
 const Toggle = forwardRef<Ref, Props>(
   ({ className, intent, size, ...props }, ref) => (

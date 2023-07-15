@@ -10,7 +10,7 @@ const Menubar = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <Root
     ref={ref}
     className={cn(
-      'flex h-10 items-center space-x-1 rounded-lg border border-mauveLine bg-mauveBase p-1',
+      'flex h-10 items-center space-x-1 rounded-lg border border-greyLine bg-greyBase p-1',
       className,
     )}
     {...props}

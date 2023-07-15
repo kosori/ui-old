@@ -41,8 +41,8 @@ const CopyWithClassNamesButton = ({
     <DropdownMenu>
       <DropdownMenuTrigger
         className={cn(
-          'front-medium relative z-20 inline-flex h-6 w-6 items-center justify-center rounded-lg border bg-mauveBase text-sm transition-colors',
-          'hover:bg-mauveBgSubtle',
+          'front-medium relative z-20 inline-flex h-6 w-6 items-center justify-center rounded-lg border bg-greyBase text-sm transition-colors',
+          'hover:bg-greyBgSubtle',
           'focus:outline-none',
           className,
         )}

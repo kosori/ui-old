@@ -11,7 +11,7 @@ const TooltipContent = forwardRef<Ref, Props>(
     <Content
       ref={ref}
       className={cn(
-        'z-50 overflow-hidden rounded-lg border border-mauveLine bg-mauveBase px-3 py-1.5 text-sm shadow-md',
+        'z-50 overflow-hidden rounded-lg border border-greyLine bg-greyBase px-3 py-1.5 text-sm shadow-md',
         className,
       )}
       sideOffset={sideOffset}

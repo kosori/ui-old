@@ -10,7 +10,7 @@ const AlertDialogDescription = forwardRef<Ref, Props>(
   ({ className, ...props }, ref) => (
     <Description
       ref={ref}
-      className={cn('text-sm text-mauveText', className)}
+      className={cn('text-sm text-greyText', className)}
       {...props}
     />
   ),

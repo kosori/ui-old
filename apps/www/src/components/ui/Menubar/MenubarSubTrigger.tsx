@@ -17,7 +17,7 @@ const MenubarSubTrigger = forwardRef<Ref, Props>(
         'flex h-8 select-none items-center rounded-md px-2 text-sm outline-none transition-colors duration-200',
         'focus:bg-primaryBgHover',
         'data-[state=open]:bg-primaryBgHover',
-        'data-[disabled]:text-mauveSolid',
+        'data-[disabled]:text-greySolid',
         inset && 'pl-8',
         className,
       )}

@@ -11,7 +11,7 @@ const DropdownMenuContent = forwardRef<Ref, Props>(
     <Content
       ref={ref}
       className={cn(
-        'z-50 min-w-[8rem] overflow-hidden rounded-lg border border-mauveLine bg-mauveBase p-1 shadow-md',
+        'z-50 min-w-[8rem] overflow-hidden rounded-lg border border-greyLine bg-greyBase p-1 shadow-md',
         className,
       )}
       sideOffset={sideOffset}

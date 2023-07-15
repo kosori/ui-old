@@ -12,7 +12,7 @@ const buttonStyles = tv({
   variants: {
     intent: {
       primary: cn(
-        'bg-primarySolid text-mauveBase',
+        'bg-primarySolid text-greyBase',
         'hover:bg-primarySolidHover',
         'focus-visible:ring-primaryFocusRing',
         'disabled:bg-primaryBorder',
@@ -25,18 +25,18 @@ const buttonStyles = tv({
         'disabled:bg-primaryBgSubtle disabled:text-primaryLine disabled:border-primaryLine',
       ),
       tertiary: cn(
-        'bg-mauveBase text-mauveTextContrast border border-mauveBorder',
-        'hover:bg-mauveBgSubtle hover:border-mauveBorderHover',
-        'active:bg-mauveBg',
-        'focus-visible:ring-mauveFocusRing',
-        'disabled:text-mauveSolid disabled:border-mauveLine disabled:bg-mauveBase',
+        'bg-greyBase text-greyTextContrast border border-greyBorder',
+        'hover:bg-greyBgSubtle hover:border-greyBorderHover',
+        'active:bg-greyBg',
+        'focus-visible:ring-greyFocusRing',
+        'disabled:text-greySolid disabled:border-greyLine disabled:bg-greyBase',
       ),
       quaternary: cn(
-        'text-mauveTextContrast',
-        'hover:bg-mauveBgHover',
-        'active:bg-mauveBgActive',
-        'focus-visible:ring-mauveFocusRing',
-        'disabled:bg-transparent disabled:text-mauveSolid',
+        'text-greyTextContrast',
+        'hover:bg-greyBgHover',
+        'active:bg-greyBgActive',
+        'focus-visible:ring-greyFocusRing',
+        'disabled:bg-transparent disabled:text-greySolid',
       ),
     },
     size: {
@@ -55,7 +55,7 @@ const buttonStyles = tv({
 
 type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
-interface Props extends ButtonProps, ButtonVariants {}
+interface Props extends ButtonProps, ButtonVariants { }
 
 const Button = forwardRef<HTMLButtonElement, Props>(
   ({ intent, size, className, ...props }, ref) => {

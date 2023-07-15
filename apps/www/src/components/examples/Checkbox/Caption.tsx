@@ -7,7 +7,7 @@ const Caption = () => {
       <Checkbox id='terms' />
       <div className='space-y-1 leading-4'>
         <Label htmlFor='terms'>Accept terms and conditions</Label>
-        <p className='text-mauveText'>
+        <p className='text-greyText'>
           You agree to our Terms of Service and Privacy Policy.
         </p>
       </div>

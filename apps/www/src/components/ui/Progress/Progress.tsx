@@ -11,13 +11,13 @@ const Progress = forwardRef<Ref, Props>(
     <Root
       ref={ref}
       className={cn(
-        'relative h-4 w-full overflow-hidden rounded-full bg-mauveBg',
+        'relative h-4 w-full overflow-hidden rounded-full bg-greyBg',
         className,
       )}
       {...props}
     >
       <Indicator
-        className='h-full w-full flex-1 bg-mauveTextContrast transition-all'
+        className='h-full w-full flex-1 bg-greyTextContrast transition-all'
         style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
       />
     </Root>

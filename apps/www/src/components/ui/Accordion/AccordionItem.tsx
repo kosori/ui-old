@@ -10,11 +10,11 @@ const AccordionItem = forwardRef<Ref, Props>(({ className, ...props }, ref) => (
   <Item
     ref={ref}
     className={cn(
-      'w-full rounded-lg border border-mauveBorder bg-mauveBase transition-colors duration-200',
+      'w-full rounded-lg border border-greyBorder bg-greyBase transition-colors duration-200',
       'focus-within:outline focus-within:outline-primaryFocusRing',
-      'hover:border-mauveBorderHover',
-      'data-[disabled]:border-mauveLine',
-      'data-[disabled]:hover:border-mauveLine',
+      'hover:border-greyBorderHover',
+      'data-[disabled]:border-greyLine',
+      'data-[disabled]:hover:border-greyLine',
       className,
     )}
     {...props}

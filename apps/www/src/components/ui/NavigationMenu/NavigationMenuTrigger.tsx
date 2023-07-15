@@ -5,13 +5,13 @@ import { ChevronDown } from 'lucide-react';
 import { cn } from '~/utils';
 
 export const navigationMenuTriggerStyle = cn(
-  'group inline-flex h-10 w-max items-center justify-center rounded-lg bg-mauveBase px-4 py-2 text-sm font-medium transition-colors duration-200',
+  'group inline-flex h-10 w-max items-center justify-center rounded-lg bg-greyBase px-4 py-2 text-sm font-medium transition-colors duration-200',
   'hover:bg-primaryBgHover',
   'active:bg-primaryBgActive',
   'focus:bg-primaryBgHover focus:outline-none',
   'data-[state=open]:bg-primaryBgActive',
-  'disabled:cursor-not-allowed disabled:text-mauveSolid',
-  'disabled:hover:bg-mauveBase',
+  'disabled:cursor-not-allowed disabled:text-greySolid',
+  'disabled:hover:bg-greyBase',
 );
 
 type Ref = React.ElementRef<typeof Trigger>;

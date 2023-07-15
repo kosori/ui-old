@@ -17,7 +17,7 @@ const MenubarContent = forwardRef<Ref, Props>(
         align={align}
         alignOffset={alignOffset}
         className={cn(
-          'z-50 min-w-[12rem] overflow-hidden rounded-lg border border-mauveLine bg-mauveBase p-1 shadow-md',
+          'z-50 min-w-[12rem] overflow-hidden rounded-lg border border-greyLine bg-greyBase p-1 shadow-md',
           className,
         )}
         sideOffset={sideOffset}

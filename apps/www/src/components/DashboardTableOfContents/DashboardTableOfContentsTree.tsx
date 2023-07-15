@@ -22,10 +22,10 @@ const DashboardTableOfContentsTree = ({
             <Link
               className={cn(
                 'inline-block no-underline transition-colors',
-                'hover:text-mauveTextContrast',
+                'hover:text-greyTextContrast',
                 item.url === `#${activeItem}`
-                  ? 'text-mauveTextContrast'
-                  : 'text-mauveText',
+                  ? 'text-greyTextContrast'
+                  : 'text-greyText',
               )}
               href={item.url}
             >
