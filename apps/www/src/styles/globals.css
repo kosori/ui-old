@@ -735,3 +735,9 @@
     --gold12: 49 52% 93.8%;
   }
 }
+
+@layer base {
+  body {
+    @apply bg-greyBase text-greyTextContrast;
+  }
+}
