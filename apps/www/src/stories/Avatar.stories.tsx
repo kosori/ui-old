@@ -9,13 +9,13 @@ const meta: Meta<typeof Avatar> = {
   argTypes: {
     shape: {
       control: { type: 'select' },
-      description: 'Con',
+      description: 'Choose the shape:',
       defaultValue: { summary: 'rounded' },
       options: ['rounded', 'square'],
     },
     size: {
-      control: { type: 'select' },
-      description: '',
+      control: { type: 'select:' },
+      description: 'Choose the size',
       defaultValue: { summary: 'small' },
       options: ['small', 'extra-small', 'medium', 'large', 'extra-large'],
     },
