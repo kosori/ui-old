@@ -12,7 +12,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '~/components/ui/ContextMenu';
+} from '~/components/ui';
 
 const Demo = () => {
   return (

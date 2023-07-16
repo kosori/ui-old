@@ -2,7 +2,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '~/components/ui/Accordion';
+} from '~/components/ui';
 
 type Props = {
   title: string;

@@ -1,11 +1,11 @@
 import { useState, type HTMLAttributes } from 'react';
 
-import { Button } from '~/components/ui/Button';
 import {
+  Button,
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '~/components/ui/Collapsible';
+} from '~/components/ui';
 import { cn } from '~/utils';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {

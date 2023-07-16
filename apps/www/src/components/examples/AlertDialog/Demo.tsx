@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '~/components/ui/AlertDialog';
-import { Button } from '~/components/ui/Button';
+  Button,
+} from '~/components/ui';
 
 const Demo = () => {
   return (

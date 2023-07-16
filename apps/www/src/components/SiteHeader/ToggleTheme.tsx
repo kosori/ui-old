@@ -1,13 +1,13 @@
 import { Moon, Sun, Wand } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
-import { Button } from '~/components/ui/Button';
 import {
+  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '~/components/ui/DropdownMenu';
+} from '~/components/ui';
 import { cn } from '~/utils';
 
 const ToggleTheme = () => {

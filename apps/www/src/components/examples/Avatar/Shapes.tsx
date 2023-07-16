@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/Avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui';
 
 const Shapes = () => (
   <div className='flex gap-x-4'>

@@ -1,6 +1,6 @@
 import { Megaphone } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from '~/components/ui/Alert';
+import { Alert, AlertDescription, AlertTitle } from '~/components/ui';
 
 const Info = () => {
   return (

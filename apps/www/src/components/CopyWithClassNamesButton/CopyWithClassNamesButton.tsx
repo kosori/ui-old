@@ -8,7 +8,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '~/components/ui/DropdownMenu';
+} from '~/components/ui';
 import { copyToClipboardWithMeta } from '~/helpers';
 import { cn } from '~/utils';
 

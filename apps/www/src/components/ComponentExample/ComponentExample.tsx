@@ -5,7 +5,7 @@ import {
   type ReactElement,
 } from 'react';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/Tabs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui';
 import { CopyButton, CopyWithClassNamesButton } from '~/components';
 import { cn } from '~/utils';
 

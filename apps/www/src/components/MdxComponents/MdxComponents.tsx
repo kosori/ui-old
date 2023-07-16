@@ -7,8 +7,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '~/components/ui/Accordion';
-import { AspectRatio } from '~/components/ui/AspectRatio';
+  AspectRatio,
+} from '~/components/ui';
 import {
   CodeBlockWrapper,
   ComponentExample,

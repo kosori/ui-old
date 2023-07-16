@@ -1,4 +1,4 @@
-import { Badge } from '~/components/ui/Badge';
+import { Badge } from '~/components/ui';
 
 const Intents = () => {
   return (

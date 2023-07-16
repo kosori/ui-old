@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Calendar } from '~/components/ui/Calendar';
+import { Calendar } from '~/components/ui';
 
 const Demo = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
