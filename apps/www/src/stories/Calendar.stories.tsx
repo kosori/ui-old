@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import type { DayPicker } from 'react-day-picker';
 
-import { Calendar } from '~/components/ui/Calendar';
+import { Calendar } from '~/components/ui';
 
 const meta: Meta<typeof Calendar> = {
   title: 'Example/Calendar',

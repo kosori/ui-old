@@ -7,7 +7,7 @@ import {
   XCircle,
 } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from '~/components/ui/Alert';
+import { Alert, AlertDescription, AlertTitle } from '~/components/ui';
 
 const meta: Meta<typeof Alert> = {
   title: 'Example/Alert',

@@ -10,8 +10,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '~/components/ui/AlertDialog';
-import { Button } from '~/components/ui/Button';
+  Button,
+} from '~/components/ui';
 
 const meta: Meta<typeof AlertDialog> = {
   title: 'Example/AlertDialog',

@@ -7,8 +7,8 @@ import {
   Breadcrumb,
   BreadcrumbContent,
   BreadcrumbSeparator,
-} from '~/components/ui/Breadcrumb';
-import { ScrollArea } from '~/components/ui/ScrollArea';
+  ScrollArea,
+} from '~/components/ui';
 import { DashboardTableOfContents, DocsSidebarNav, Mdx } from '~/components';
 import { docsConfig } from '~/config';
 import { getTableOfContents } from '~/helpers';
