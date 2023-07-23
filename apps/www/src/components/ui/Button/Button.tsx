@@ -44,20 +44,31 @@ const buttonStyles = tv({
         'px-2 h-6 text-[10px] leading-4 rounded-md gap-x-1',
         '[&_svg]:h-3 [&_svg]:w-3',
       ),
+      'extra-small-icon': cn('h-6 w-6 rounded-md', '[&_svg]:h-3 [&_svg]:w-3'),
       small: cn(
         'px-2.5 h-8 text-xs leading-4 rounded-lg gap-x-1.5',
         '[&_svg]:h-3.5 [&_svg]:w-3.5',
       ),
+      'small-icon': cn('h-8 w-8 rounded-lg', '[&_svg]:h-3.5 [&_svg]:w-3.5'),
       medium: cn(
         'px-3 h-10 text-sm rounded-lg gap-x-2',
+        '[&_svg]:h-[18px] [&_svg]:w-[18px]',
+      ),
+      'medium-icon': cn(
+        'h-10 w-10 rounded-lg',
         '[&_svg]:h-[18px] [&_svg]:w-[18px]',
       ),
       large: cn(
         'px-4 h-12 text-md rounded-xl gap-x-2.5',
         '[&_svg]:h-5 [&_svg]:w-5',
       ),
+      'large-icon': cn('h-12 w-12 rounded-xl', '[&_svg]:h-5 [&_svg]:w-5'),
       'extra-large': cn(
         'px-4 h-[60px] text-lg rounded-xl gap-x-3',
+        '[&_svg]:h-6 [&_svg]:w-6',
+      ),
+      'extra-large-icon': cn(
+        'h-[60px] w-[60px] rounded-xl',
         '[&_svg]:h-6 [&_svg]:w-6',
       ),
     },
