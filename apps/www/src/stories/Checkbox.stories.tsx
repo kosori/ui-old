@@ -39,3 +39,55 @@ export const Default: Story = {
     </div>
   ),
 };
+
+export const Square: Story = {
+  args: {
+    shape: 'square',
+    size: 'small',
+  },
+  render: ({ shape, size }) => (
+    <div className='flex items-center space-x-2'>
+      <Checkbox id='terms' shape={shape} size={size} />
+      <Label htmlFor='terms'>Accept terms and conditions</Label>
+    </div>
+  ),
+};
+
+export const Rounded: Story = {
+  args: {
+    shape: 'rounded',
+    size: 'small',
+  },
+  render: ({ shape, size }) => (
+    <div className='flex items-center space-x-2'>
+      <Checkbox id='terms' shape={shape} size={size} />
+      <Label htmlFor='terms'>Accept terms and conditions</Label>
+    </div>
+  ),
+};
+
+export const Small: Story = {
+  args: {
+    shape: 'square',
+    size: 'small',
+  },
+  render: ({ shape, size }) => (
+    <div className='flex items-center space-x-2'>
+      <Checkbox id='terms' shape={shape} size={size} />
+      <Label htmlFor='terms'>Accept terms and conditions</Label>
+    </div>
+  ),
+};
+
+export const Medium: Story = {
+  args: {
+    shape: 'square',
+    size: 'medium',
+  },
+  render: ({ shape, size }) => (
+    <div className='flex items-center space-x-2'>
+      <Checkbox id='terms' shape={shape} size={size} />
+      <Label htmlFor='terms'>Accept terms and conditions</Label>
+    </div>
+  ),
+};
