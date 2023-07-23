@@ -25,9 +25,77 @@ export default meta;
 
 type Story = StoryObj<typeof BreadcrumbSeparator>;
 
-export const Default: Story = {
+export const Slash: Story = {
   args: {
     type: 'slash',
+  },
+  render: ({ type }) => (
+    <Breadcrumb>
+      <BreadcrumbContent href='#'>Docs</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent href='#'>Components</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent isActive href='#'>
+        Breadcrumb
+      </BreadcrumbContent>
+    </Breadcrumb>
+  ),
+};
+
+export const VerticalBar: Story = {
+  args: {
+    type: 'vertical-bar',
+  },
+  render: ({ type }) => (
+    <Breadcrumb>
+      <BreadcrumbContent href='#'>Docs</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent href='#'>Components</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent isActive href='#'>
+        Breadcrumb
+      </BreadcrumbContent>
+    </Breadcrumb>
+  ),
+};
+
+export const Chevron: Story = {
+  args: {
+    type: 'chevron',
+  },
+  render: ({ type }) => (
+    <Breadcrumb>
+      <BreadcrumbContent href='#'>Docs</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent href='#'>Components</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent isActive href='#'>
+        Breadcrumb
+      </BreadcrumbContent>
+    </Breadcrumb>
+  ),
+};
+
+export const Arrow: Story = {
+  args: {
+    type: 'arrow',
+  },
+  render: ({ type }) => (
+    <Breadcrumb>
+      <BreadcrumbContent href='#'>Docs</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent href='#'>Components</BreadcrumbContent>
+      <BreadcrumbSeparator type={type} />
+      <BreadcrumbContent isActive href='#'>
+        Breadcrumb
+      </BreadcrumbContent>
+    </Breadcrumb>
+  ),
+};
+
+export const Dot: Story = {
+  args: {
+    type: 'dot',
   },
   render: ({ type }) => (
     <Breadcrumb>
