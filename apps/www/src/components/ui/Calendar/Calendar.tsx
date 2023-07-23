@@ -53,8 +53,7 @@ const Calendar = ({
         day_today: buttonStyles({ intent: 'secondary', class: 'h-9 w-10' }),
         day_outside: 'text-greyText opacity-50',
         day_disabled: 'text-greyText opacity-50',
-        day_range_middle:
-          'aria-selected:bg-primarySolid aria-selected:greyBase',
+        day_range_middle: 'aria-selected:bg-greyBg !text-greyTextContrast',
         day_hidden: 'invisible',
         ...classNames,
       }}
