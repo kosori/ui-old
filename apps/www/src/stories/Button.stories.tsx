@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Play, PlusCircle } from 'lucide-react';
 
 import { Button } from '~/components/ui';
-import { cn } from '~/utils';
 
 const meta: Meta<typeof Button> = {
   title: 'Example/Button',
