@@ -14,7 +14,7 @@ const meta: Meta<typeof Avatar> = {
       options: ['rounded', 'square'],
     },
     size: {
-      control: { type: 'select:' },
+      control: { type: 'select' },
       description: 'Choose the size',
       defaultValue: { summary: 'small' },
       options: ['small', 'extra-small', 'medium', 'large', 'extra-large'],
