@@ -40,11 +40,26 @@ const buttonStyles = tv({
       ),
     },
     size: {
-      'extra-small': 'px-2 h-6 text-[10px] leading-4 rounded-md gap-x-1',
-      small: 'px-2.5 h-8 text-xs leading-4 rounded-lg gap-x-1.5',
-      medium: 'px-3 h-10 text-sm rounded-lg gap-x-2',
-      large: 'px-4 h-12 text-md rounded-xl gap-x-2.5',
-      'extra-large': 'px-4 h-[60px] text-lg rounded-xl gap-x-3',
+      'extra-small': cn(
+        'px-2 h-6 text-[10px] leading-4 rounded-md gap-x-1',
+        '[&_svg]:h-3 [&_svg]:w-3',
+      ),
+      small: cn(
+        'px-2.5 h-8 text-xs leading-4 rounded-lg gap-x-1.5',
+        '[&_svg]:h-3.5 [&_svg]:w-3.5',
+      ),
+      medium: cn(
+        'px-3 h-10 text-sm rounded-lg gap-x-2',
+        '[&_svg]:h-[18px] [&_svg]:w-[18px]',
+      ),
+      large: cn(
+        'px-4 h-12 text-md rounded-xl gap-x-2.5',
+        '[&_svg]:h-5 [&_svg]:w-5',
+      ),
+      'extra-large': cn(
+        'px-4 h-[60px] text-lg rounded-xl gap-x-3',
+        '[&_svg]:h-6 [&_svg]:w-6',
+      ),
     },
   },
   defaultVariants: {
