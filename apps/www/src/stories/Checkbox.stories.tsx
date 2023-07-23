@@ -27,7 +27,7 @@ export default meta;
 
 type Story = StoryObj<typeof Checkbox>;
 
-export const Slash: Story = {
+export const Default: Story = {
   args: {
     shape: 'square',
     size: 'small',
