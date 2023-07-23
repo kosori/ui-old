@@ -40,11 +40,11 @@ const buttonStyles = tv({
       ),
     },
     size: {
-      'extra-small': 'px-2 py-1 text-[10px] leading-4 rounded-md gap-x-1',
-      small: 'px-2.5 py-2 text-xs leading-4 rounded-lg gap-x-1.5',
-      medium: 'px-3 py-2 text-sm rounded-lg gap-x-2',
-      large: 'px-4 py-3 text-md rounded-xl gap-x-2.5',
-      'extra-large': 'px-4 py-4 text-lg rounded-xl gap-x-3',
+      'extra-small': 'px-2 h-6 text-[10px] leading-4 rounded-md gap-x-1',
+      small: 'px-2.5 h-8 text-xs leading-4 rounded-lg gap-x-1.5',
+      medium: 'px-3 h-10 text-sm rounded-lg gap-x-2',
+      large: 'px-4 h-12 text-md rounded-xl gap-x-2.5',
+      'extra-large': 'px-4 h-[60px] text-lg rounded-xl gap-x-3',
     },
   },
   defaultVariants: {
@@ -55,7 +55,7 @@ const buttonStyles = tv({
 
 type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
-interface Props extends ButtonProps, ButtonVariants {}
+interface Props extends ButtonProps, ButtonVariants { }
 
 const Button = forwardRef<HTMLButtonElement, Props>(
   ({ intent, size, className, ...props }, ref) => {
