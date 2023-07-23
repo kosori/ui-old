@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Play, PlusCircle } from 'lucide-react';
 
 import { Button } from '~/components/ui';
+import { cn } from '~/utils';
 
 const meta: Meta<typeof Button> = {
   title: 'Example/Button',
@@ -21,10 +23,6 @@ const meta: Meta<typeof Button> = {
       control: { type: 'boolean' },
       description: 'Disabled the button',
     },
-    children: {
-      type: 'string',
-      description: 'Write the button text',
-    },
   },
 };
 
@@ -39,6 +37,13 @@ export const Primary: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const Secondary: Story = {
@@ -57,6 +62,13 @@ export const Tertiary: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const Quaternary: Story = {
@@ -66,6 +78,13 @@ export const Quaternary: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const ExtraSmall: Story = {
@@ -75,6 +94,13 @@ export const ExtraSmall: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const Small: Story = {
@@ -84,6 +110,13 @@ export const Small: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const Medium: Story = {
@@ -93,6 +126,13 @@ export const Medium: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const Large: Story = {
@@ -102,6 +142,13 @@ export const Large: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
 
 export const ExtraLarge: Story = {
@@ -111,4 +158,11 @@ export const ExtraLarge: Story = {
     disabled: false,
     children: 'Button',
   },
+  render: ({ intent, size, disabled, children }) => (
+    <Button disabled={disabled} intent={intent} size={size}>
+      <Play />
+      <span>{children}</span>
+      <PlusCircle />
+    </Button>
+  ),
 };
