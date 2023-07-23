@@ -81,8 +81,19 @@ const buttonStyles = tv({
 
 type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
-interface Props extends ButtonProps, ButtonVariants { }
+interface Props extends ButtonProps {
+  /** Change the visual style of the Button */
+  intent: ButtonVariants['intent'];
+  /** Change the size of the Button */
+  size: ButtonVariants['size'];
+}
 
+/**
+ * Displays a button or a component that looks like a button.
+ * @param {string} [intent='primary'] - Change the visul style of the Button.
+ * @param {string} [size='medium'] - Change the size of the BUtton.
+ * @see {@link https://dub.sh/XuNhEXJ Button Docs} for further information.
+ */
 const Button = forwardRef<HTMLButtonElement, Props>(
   ({ intent, size, className, ...props }, ref) => {
     return (
