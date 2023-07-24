@@ -8,7 +8,7 @@ import {
 } from '~/components/ui';
 
 const meta: Meta<typeof Accordion> = {
-  title: 'Example/Accordion',
+  title: 'Design System/Accordion/Collapsible',
   component: Accordion,
   tags: ['autodocs'],
   argTypes: {
@@ -36,49 +36,6 @@ const meta: Meta<typeof Accordion> = {
 export default meta;
 
 type Story = StoryObj<typeof Accordion>;
-
-export const Single: Story = {
-  args: {
-    type: 'single',
-    collapsible: false,
-  },
-  render: ({
-    type,
-    collapsible,
-  }: {
-    type: 'single' | 'multiple';
-    collapsible?: boolean;
-  }) => (
-    <Accordion
-      className='grid w-full max-w-screen-sm gap-4'
-      collapsible={collapsible}
-      type={type}
-    >
-      <AccordionItem value='item-1'>
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes.It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem value='item-2'>
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
-        <AccordionContent>
-          Yes.It comes with default styles that matches the other components
-          aesthetic.
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem value='item-3'>
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
-        <AccordionContent>
-          Yes.It&apos; s animated by default , but you can disable it if you
-          prefer.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  ),
-};
 
 export const Collapsible: Story = {
   args: {
@@ -123,12 +80,23 @@ export const Collapsible: Story = {
   ),
 };
 
-export const Multiple: Story = {
+export const NoCollapsible: Story = {
   args: {
-    type: 'multiple',
+    type: 'single',
+    collapsible: false,
   },
-  render: ({ type }) => (
-    <Accordion className='grid w-full max-w-screen-sm gap-4' type={type}>
+  render: ({
+    type,
+    collapsible,
+  }: {
+    type: 'single' | 'multiple';
+    collapsible?: boolean;
+  }) => (
+    <Accordion
+      className='grid w-full max-w-screen-sm gap-4'
+      collapsible={collapsible}
+      type={type}
+    >
       <AccordionItem value='item-1'>
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>
