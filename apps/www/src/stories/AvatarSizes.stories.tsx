@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui';
 
 const meta: Meta<typeof Avatar> = {
-  title: 'Example/Avatar',
+  title: 'Design System/Avatar/Sizes',
   component: Avatar,
   tags: ['autodocs'],
   argTypes: {
@@ -28,41 +28,9 @@ const meta: Meta<typeof Avatar> = {
 
 type Story = StoryObj<typeof Avatar>;
 
-export const Default: Story = {
+export const Small: Story = {
   args: {
     shape: 'rounded',
-    size: 'small',
-  },
-  render: ({ shape, size }) => (
-    <Avatar shape={shape} size={size}>
-      <AvatarImage
-        alt='@codingcodax'
-        src='https://github.com/codingcodax.png'
-      />
-      <AvatarFallback>CC</AvatarFallback>
-    </Avatar>
-  ),
-};
-
-export const Rounded: Story = {
-  args: {
-    shape: 'rounded',
-    size: 'small',
-  },
-  render: ({ shape, size }) => (
-    <Avatar shape={shape} size={size}>
-      <AvatarImage
-        alt='@codingcodax'
-        src='https://github.com/codingcodax.png'
-      />
-      <AvatarFallback>CC</AvatarFallback>
-    </Avatar>
-  ),
-};
-
-export const Square: Story = {
-  args: {
-    shape: 'square',
     size: 'small',
   },
   render: ({ shape, size }) => (
@@ -80,22 +48,6 @@ export const ExtraSmall: Story = {
   args: {
     shape: 'rounded',
     size: 'extra-small',
-  },
-  render: ({ shape, size }) => (
-    <Avatar shape={shape} size={size}>
-      <AvatarImage
-        alt='@codingcodax'
-        src='https://github.com/codingcodax.png'
-      />
-      <AvatarFallback>CC</AvatarFallback>
-    </Avatar>
-  ),
-};
-
-export const Small: Story = {
-  args: {
-    shape: 'rounded',
-    size: 'small',
   },
   render: ({ shape, size }) => (
     <Avatar shape={shape} size={size}>
