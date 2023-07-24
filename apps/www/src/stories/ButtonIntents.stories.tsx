@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Play, PlusCircle } from 'lucide-react';
 
 import { Button } from '~/components/ui';
 
 const meta: Meta<typeof Button> = {
-  title: 'Design System/Button',
+  title: 'Design System/Button/Intents',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
@@ -14,18 +13,7 @@ const meta: Meta<typeof Button> = {
     },
     size: {
       control: { type: 'select' },
-      options: [
-        'extra-small',
-        'small',
-        'medium',
-        'large',
-        'extra-large',
-        'extra-small-icon',
-        'small-icon',
-        'medium-icon',
-        'large-icon',
-        'extra-large-icon',
-      ],
+      options: ['extra-small', 'small', 'medium', 'large', 'extra-large'],
     },
     disabled: {
       control: { type: 'boolean' },
@@ -69,51 +57,6 @@ export const Quaternary: Story = {
   args: {
     intent: 'quaternary',
     size: 'medium',
-    disabled: false,
-    children: 'Button',
-  },
-};
-
-export const ExtraSmall: Story = {
-  args: {
-    intent: 'primary',
-    size: 'extra-small',
-    disabled: false,
-    children: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    intent: 'primary',
-    size: 'small',
-    disabled: false,
-    children: 'Button',
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    intent: 'primary',
-    size: 'medium',
-    disabled: false,
-    children: 'Button',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    intent: 'primary',
-    size: 'large',
-    disabled: false,
-    children: 'Button',
-  },
-};
-
-export const ExtraLarge: Story = {
-  args: {
-    intent: 'primary',
-    size: 'extra-large',
     disabled: false,
     children: 'Button',
   },
