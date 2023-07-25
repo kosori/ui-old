@@ -18,7 +18,7 @@ import {
 } from '~/components/ui';
 
 const meta: Meta<typeof Card> = {
-  title: 'Example/Card',
+  title: 'Design System/Card',
   component: Card,
   tags: ['autodocs'],
   argTypes: {},
