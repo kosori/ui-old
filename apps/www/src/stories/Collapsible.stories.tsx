@@ -11,7 +11,7 @@ import {
 import { cn } from '~/utils';
 
 const meta: Meta<typeof Collapsible> = {
-  title: 'Example/Collapsible',
+  title: 'Design System/Collapsible',
   component: Collapsible,
   tags: ['autodocs'],
   argTypes: {},
