@@ -14,7 +14,7 @@ import {
 } from '~/components/ui';
 
 const meta: Meta<typeof AlertDialog> = {
-  title: 'Example/AlertDialog',
+  title: 'Design System/AlertDialog',
   component: AlertDialog,
   tags: ['autodocs'],
   argTypes: {},
