@@ -83,9 +83,9 @@ type ButtonProps = React.ComponentPropsWithoutRef<'button'>;
 type ButtonVariants = VariantProps<typeof buttonStyles>;
 interface Props extends ButtonProps {
   /** Change the visual style of the Button */
-  intent: ButtonVariants['intent'];
+  intent?: ButtonVariants['intent'];
   /** Change the size of the Button */
-  size: ButtonVariants['size'];
+  size?: ButtonVariants['size'];
 }
 
 /**
