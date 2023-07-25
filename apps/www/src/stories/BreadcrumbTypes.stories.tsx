@@ -7,7 +7,7 @@ import {
 } from '~/components/ui';
 
 const meta: Meta<typeof BreadcrumbSeparator> = {
-  title: 'Example/Breadcrumb',
+  title: 'Design System/Breadcrumb/Types',
   component: BreadcrumbSeparator,
   tags: ['autodocs'],
   argTypes: {
