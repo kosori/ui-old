@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ThemeProvider as NextThemeProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ReactQueryStreamedHydration } from '@tanstack/react-query-next-experimental';
@@ -64,3 +65,9 @@ export function TRPCReactProvider(props: {
     </api.Provider>
   );
 }
+
+export const ThemeProvider = (props: { children: React.ReactNode }) => (
+  <NextThemeProvider attribute='class' defaultTheme='light'>
+    {props.children}
+  </NextThemeProvider>
+);
