@@ -1,23 +1,23 @@
-import Discord from "@auth/core/providers/discord";
-import type { DefaultSession } from "@auth/core/types";
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
-import NextAuth from "next-auth";
+import Discord from '@auth/core/providers/discord';
+import type { DefaultSession } from '@auth/core/types';
+import { DrizzleAdapter } from '@auth/drizzle-adapter';
+import NextAuth from 'next-auth';
 
-import { db, tableCreator } from "@acme/db";
+import { db, tableCreator } from '@acme/db';
 
-import { env } from "./env.mjs";
+import { env } from './env.mjs';
 
-export type { Session } from "next-auth";
+export type { Session } from 'next-auth';
 
 // Update this whenever adding new providers so that the client can
-export const providers = ["discord"] as const;
+export const providers = ['discord'] as const;
 export type OAuthProviders = (typeof providers)[number];
 
-declare module "next-auth" {
+declare module 'next-auth' {
   interface Session {
     user: {
       id: string;
-    } & DefaultSession["user"];
+    } & DefaultSession['user'];
   }
 }
 
