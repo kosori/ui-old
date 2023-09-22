@@ -7,6 +7,17 @@ const config = {
   ],
   rules: {
     "react/prop-types": "off",
+    "react/jsx-key": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        noSortAlphabetically: false,
+        reservedFirst: true,
+      },
+    ],
   },
   globals: {
     React: "writable",
