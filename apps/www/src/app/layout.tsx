@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 
 import '~/styles/globals.css';
 
+import { ThemeProvider } from './providers';
+
 const fontSans = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
@@ -28,7 +30,7 @@ const Layout = (props: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
       <body className={['font-sans', fontSans.variable].join(' ')}>
-        {props.children}
+        <ThemeProvider>{props.children}</ThemeProvider>
       </body>
     </html>
   );
