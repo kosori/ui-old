@@ -18,7 +18,7 @@ const config = {
   ),
   importOrder: [
     '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
-    '^(next/(.*)$)|^(next$)',
+    '^(next/(.*)$)|^(next$)|^(next-(.*)$)',
     '^(expo(.*)$)|^(expo$)',
     '<THIRD_PARTY_MODULES>',
     '',
