@@ -314,6 +314,9 @@ importers:
 
   tooling/tailwind:
     dependencies:
+      '@radix-ui/colors':
+        specifier: 3.0.0-rc.4
+        version: 3.0.0-rc.4
       autoprefixer:
         specifier: ^10.4.15
         version: 10.4.15(postcss@8.4.30)
@@ -1384,6 +1387,10 @@ packages:
   /@planetscale/database@1.11.0:
     resolution: {integrity: sha512-aWbU+D/IRHoDE9975y+Q4c+EwwAWxCPwFId+N1AhQVFXzbeJMkj6KN2iQtoi03elcLMRdfT+V3i9Z4WRw+/oIA==}
     engines: {node: '>=16'}
+    dev: false
+
+  /@radix-ui/colors@3.0.0-rc.4:
+    resolution: {integrity: sha512-dUG9WQCdjKPiiqbQsahUGmOuC+9kCltckQtej7hkVIQp56xirLaMsNrOs9xMYXnIbNqK/vZCmoEk+q1Nda+2AA==}
     dev: false
 
   /@sindresorhus/is@0.14.0:
