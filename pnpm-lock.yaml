@@ -244,6 +244,24 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
+  packages/ui:
+    devDependencies:
+      '@acme/eslint-config':
+        specifier: 0.2.0
+        version: link:../../tooling/eslint
+      '@acme/prettier-config':
+        specifier: ^0.1.0
+        version: link:../../tooling/prettier
+      '@acme/tsconfig':
+        specifier: ^0.1.0
+        version: link:../../tooling/typescript
+      eslint:
+        specifier: ^8.49.0
+        version: 8.49.0
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+
   tooling/eslint:
     dependencies:
       '@next/eslint-plugin-next':
