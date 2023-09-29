@@ -67,7 +67,12 @@ export function TRPCReactProvider(props: {
 }
 
 export const ThemeProvider = (props: { children: React.ReactNode }) => (
-  <NextThemeProvider attribute='class' defaultTheme='system'>
+  <NextThemeProvider
+    attribute='class'
+    defaultTheme='system'
+    enableSystem
+    disableTransitionOnChange
+  >
     {props.children}
   </NextThemeProvider>
 );
