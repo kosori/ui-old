@@ -76,6 +76,7 @@
     "@storybook/addon-interactions": "7.5.0-alpha.3",
     "@storybook/addon-links": "7.5.0-alpha.3",
     "@storybook/addon-styling-webpack": "^0.0.4",
+    "@storybook/addon-themes": "^7.4.5",
     "@storybook/blocks": "7.5.0-alpha.3",
     "@storybook/nextjs": "7.5.0-alpha.3",
     "@storybook/react": "7.5.0-alpha.3",
