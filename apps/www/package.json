@@ -60,6 +60,7 @@
     "react-day-picker": "^8.8.2",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.46.2",
+    "storybook": "7.5.0-alpha.3",
     "superjson": "1.13.1",
     "tailwind-merge": "^1.14.0",
     "tailwind-variants": "^0.1.14",
