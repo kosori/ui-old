@@ -6,7 +6,7 @@
     "build": "pnpm with-env next build",
     "clean": "git clean -xdf .next .turbo node_modules",
     "dev": "pnpm with-env next dev",
-    "storybook": "storybook dev",
+    "storybook": "storybook dev -p 3001",
     "storybook:build": "storybook build",
     "lint": "dotenv -v SKIP_ENV_VALIDATION=1 next lint",
     "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,md,json}\"",
