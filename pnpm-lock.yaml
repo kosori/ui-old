@@ -125,6 +125,9 @@ importers:
       '@storybook/addon-essentials':
         specifier: ^7.5.0-alpha.3
         version: 7.5.0-alpha.3(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/addon-interactions':
+        specifier: ^7.5.0-alpha.3
+        version: 7.5.0-alpha.3(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
       '@t3-oss/env-nextjs':
         specifier: ^0.6.1
         version: 0.6.1(typescript@5.2.2)(zod@3.22.2)
@@ -2508,6 +2511,17 @@ packages:
       - supports-color
     dev: false
 
+  /@jest/types@27.5.1:
+    resolution: {integrity: sha512-Cx46iJ9QpwQTjIdq5VJu2QTMMs3QlEjI0x1QbBP5W1+nMzyc2XmimiRR/CbX9TO0cPTeUlxWMOu8mslYsJ8DEw==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@types/istanbul-lib-coverage': 2.0.4
+      '@types/istanbul-reports': 3.0.2
+      '@types/node': 18.17.17
+      '@types/yargs': 16.0.6
+      chalk: 4.1.2
+    dev: false
+
   /@jest/types@29.6.3:
     resolution: {integrity: sha512-u3UPsIilWKOM3F9CXtrG8LEJmNxwoCQC/XVj4IKYXvvpx7QIi/Kg1LI5uDmDpKlac62NUtX7eLjRh+jVZcLOzw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -4309,6 +4323,39 @@ packages:
       '@storybook/preview-api': 7.5.0-alpha.3
     dev: false
 
+  /@storybook/addon-interactions@7.5.0-alpha.3(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-2nu5bKXuuY59DdZkMkqAP+XtWYe1Wdf1i9q9CmVCjJLM9vqq48yylNa667H8lDcFmapn3DLdgsNKynaTvRG8rA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/client-logger': 7.5.0-alpha.3
+      '@storybook/components': 7.5.0-alpha.3(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/core-common': 7.5.0-alpha.3
+      '@storybook/core-events': 7.5.0-alpha.3
+      '@storybook/global': 5.0.0
+      '@storybook/instrumenter': 7.5.0-alpha.3
+      '@storybook/manager-api': 7.5.0-alpha.3(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/preview-api': 7.5.0-alpha.3
+      '@storybook/theming': 7.5.0-alpha.3(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.5.0-alpha.3
+      jest-mock: 27.5.1
+      polished: 4.2.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-dom'
+      - encoding
+      - supports-color
+    dev: false
+
   /@storybook/addon-measure@7.5.0-alpha.3(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-18VVtSBsPQSnuBoWy57n/HSMLhDwxq7/YEoedVTGrtnU9giwCTpNIlj+YdHMJA4NzKrEWPVI9zCUju2NBWid5g==}
     peerDependencies:
@@ -4726,6 +4773,16 @@ packages:
 
   /@storybook/global@5.0.0:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
+    dev: false
+
+  /@storybook/instrumenter@7.5.0-alpha.3:
+    resolution: {integrity: sha512-Ck4/kov9aE4c/qb4ThCA7wJzjCKfy5OCjnxXrOjJ89CC9VSPSKzJdjTQ9kJDXppeDW8rbHp0y8ItszK+AciZFw==}
+    dependencies:
+      '@storybook/channels': 7.5.0-alpha.3
+      '@storybook/client-logger': 7.5.0-alpha.3
+      '@storybook/core-events': 7.5.0-alpha.3
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.5.0-alpha.3
     dev: false
 
   /@storybook/manager-api@7.5.0-alpha.3(react-dom@18.2.0)(react@18.2.0):
@@ -5337,6 +5394,12 @@ packages:
 
   /@types/yargs-parser@21.0.1:
     resolution: {integrity: sha512-axdPBuLuEJt0c4yI5OZssC19K2Mq1uKdrfZBzuxLvaztgqUtFYZUNw7lETExPYJR9jdEoIg4mb7RQKRQzOkeGQ==}
+    dev: false
+
+  /@types/yargs@16.0.6:
+    resolution: {integrity: sha512-oTP7/Q13GSPrgcwEwdlnkoZSQ1Hg9THe644qq8PG6hhJzjZ3qj1JjEFPIwWV/IXVs5XGIVqtkNOS9kh63WIJ+A==}
+    dependencies:
+      '@types/yargs-parser': 21.0.1
     dev: false
 
   /@types/yargs@17.0.26:
@@ -8579,6 +8642,14 @@ packages:
       walker: 1.0.8
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
+
+  /jest-mock@27.5.1:
+    resolution: {integrity: sha512-K4jKbY1d4ENhbrG2zuPWaQBvDly+iZ2yAW+T1fATN78hc0sInwn7wZB8XtlNnvHug5RMwV897Xm4LqmPM4e2Og==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': 27.5.1
+      '@types/node': 18.17.17
     dev: false
 
   /jest-regex-util@29.6.3:
