@@ -176,6 +176,9 @@ importers:
       superjson:
         specifier: 1.13.1
         version: 1.13.1
+      tailwind-merge:
+        specifier: ^1.14.0
+        version: 1.14.0
       zod:
         specifier: ^3.22.2
         version: 3.22.2
