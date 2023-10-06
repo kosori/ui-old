@@ -31,6 +31,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+/** The default button style for key actions. */
 export const Primary: Story = {
   args: {
     intent: 'primary',
@@ -40,6 +41,7 @@ export const Primary: Story = {
   },
 };
 
+/** A subdued button style for secondary actions. */
 export const Secondary: Story = {
   args: {
     intent: 'secondary',
@@ -49,6 +51,7 @@ export const Secondary: Story = {
   },
 };
 
+/** A minimalistic button style for tertiary actions. */
 export const Tertiary: Story = {
   args: {
     intent: 'tertiary',
@@ -58,6 +61,7 @@ export const Tertiary: Story = {
   },
 };
 
+/** An ultra-minimalistic button style for quaternary actions. */
 export const Quaternary: Story = {
   args: {
     intent: 'quaternary',
