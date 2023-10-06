@@ -8,21 +8,16 @@ const meta: Meta<typeof Button> = {
   tags: ['autodocs'],
   argTypes: {
     intent: {
-      control: {
-        type: 'select',
-      },
+      description: 'The visual style of the Button.',
       options: ['primary', 'secondary', 'tertiary', 'quaternary'],
     },
     size: {
-      control: {
-        type: 'select',
-      },
+      description: 'The size of the Button.',
       options: ['extra-small', 'small', 'medium', 'large', 'extra-large'],
     },
     disabled: {
-      control: {
-        type: 'boolean',
-      },
+      control: { type: 'boolean' },
+      description: 'Whether the Button is disabled.',
     },
   },
 };
