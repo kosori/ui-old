@@ -1,4 +1,4 @@
-import type { Meta, StoryOb } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button } from '~/components/ui/Button';
 
@@ -10,18 +10,18 @@ const meta: Meta<typeof Button> = {
     intent: {
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'tertiary', 'danger'],
       },
-      size: {
-        control: {
-          type: 'select',
-          options: ['extra-small', 'small', 'medium', 'large', 'extra-large'],
-        },
+      options: ['primary', 'secondary', 'tertiary', 'quaternary'],
+    },
+    size: {
+      control: {
+        type: 'select',
       },
-      disabled: {
-        control: {
-          type: 'boolean',
-        },
+      options: ['extra-small', 'small', 'medium', 'large', 'extra-large'],
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
       },
     },
   },
@@ -29,7 +29,7 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 
-type Story = StoryOb<typeof meta>;
+type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
