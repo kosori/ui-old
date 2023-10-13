@@ -47,6 +47,20 @@
     --info-11: 210.9 89.7% 42%;
     --info-12: 216.1 70.9% 22.9%;
 
+    /* DANGER */
+    --danger-1: var(--red-1);
+    --danger-2: var(--red-2);
+    --danger-3: var(--red-3);
+    --danger-4: var(--red-4);
+    --danger-5: var(--red-5);
+    --danger-6: var(--red-6);
+    --danger-7: var(--red-7);
+    --danger-8: var(--red-8);
+    --danger-9: var(--red-9);
+    --danger-10: var(--red-10);
+    --danger-11: var(--red-11);
+    --danger-12: var(--red-12);
+
     /* DEFAULT COLORS */
 
     --gray-1: 0 0% 98.8%;
