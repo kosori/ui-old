@@ -4,7 +4,7 @@ import { tv, type VariantProps } from 'tailwind-variants';
 import { cn } from '~/utils';
 
 const alertStyles = tv({
-  base: cn('relative shadow w-full rounded-xl bg-greyBase border p-4'),
+  base: cn('relative shadow-md w-full rounded-xl bg-greyBase border p-4'),
   variants: {
     intent: {
       default: cn('text-greyTextContrast border-greyLine'),
