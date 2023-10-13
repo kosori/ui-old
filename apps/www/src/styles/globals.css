@@ -33,19 +33,19 @@
     --primary-11: var(--iris-11);
     --primary-12: var(--iris-12);
 
-    /* INFO    */
-    --info-1: 210 100% 99.2%;
-    --info-2: 210 100% 98%;
-    --info-3: 210 100% 96.5%;
-    --info-4: 210 100% 94.1%;
-    --info-5: 208.8 96% 90.2%;
-    --info-6: 208.6 82.3% 84.5%;
-    --info-7: 208 78% 76.9%;
-    --info-8: 206.1 81.9% 65.3%;
-    --info-9: 205.9 100% 50%;
-    --info-10: 208.1 93.4% 47.5%;
-    --info-11: 210.9 89.7% 42%;
-    --info-12: 216.1 70.9% 22.9%;
+    /* INFO */
+    --info-1: var(--blue-1);
+    --info-2: var(--blue-2);
+    --info-3: var(--blue-3);
+    --info-4: var(--blue-4);
+    --info-5: var(--blue-5);
+    --info-6: var(--blue-6);
+    --info-7: var(--blue-7);
+    --info-8: var(--blue-8);
+    --info-9: var(--blue-9);
+    --info-10: var(--blue-10);
+    --info-11: var(--blue-11);
+    --info-12: var(--blue-12);
 
     /* DANGER */
     --danger-1: var(--red-1);
@@ -496,21 +496,6 @@
     --primary-10: var(--iris-10);
     --primary-11: var(--iris-11);
     --primary-12: var(--iris-12);
-
-    /* INFO */
-    --info-1: var(--blue-1);
-    --info-2: var(--blue-2);
-    --info-3: var(--blue-3);
-    --info-4: var(--blue-4);
-    --info-5: var(--blue-5);
-    --info-6: var(--blue-6);
-    --info-7: var(--blue-7);
-    --info-8: var(--blue-8);
-    --info-9: var(--blue-9);
-    --info-10: var(--blue-10);
-    --info-11: var(--blue-11);
-    --info-12: var(--blue-12);
-
     /* SUCCESS */
     --success-1: var(--green-1);
     --success-2: var(--green-2);
