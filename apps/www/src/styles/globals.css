@@ -484,18 +484,18 @@
     --primary-12: --iris-12;
 
     /* INFO */
-    --info-1: 211.8 36.2% 9.2%;
-    --info-2: 216 50% 11.8%;
-    --info-3: 213.9 57.5% 15.7%;
-    --info-4: 214.1 61.7% 18.4%;
-    --info-5: 213.3 66.7% 21.2%;
-    --info-6: 212.3 72.1% 25.3%;
-    --info-7: 211.1 81.8% 32.4%;
-    --info-8: 211.2 85.2% 47.8%;
-    --info-9: 205.9 100% 50%;
-    --info-10: 205.8 100% 61.8%;
-    --info-11: 205.1 100% 71%;
-    --info-12: 204.6 100% 88%;
+    --info-1: var(--blue-1);
+    --info-2: var(--blue-2);
+    --info-3: var(--blue-3);
+    --info-4: var(--blue-4);
+    --info-5: var(--blue-5);
+    --info-6: var(--blue-6);
+    --info-7: var(--blue-7);
+    --info-8: var(--blue-8);
+    --info-9: var(--blue-9);
+    --info-10: var(--blue-10);
+    --info-11: var(--blue-11);
+    --info-12: var(--blue-12);
 
     /* DEFAULT COLORS */
 
