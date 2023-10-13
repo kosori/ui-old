@@ -470,18 +470,18 @@
     --grey-12: var(--slate-12);
 
     /* PRIMARY */
-    --primary-1: --iris-1;
-    --primary-2: --iris-2;
-    --primary-3: --iris-3;
-    --primary-4: --iris-4;
-    --primary-5: --iris-5;
-    --primary-6: --iris-6;
-    --primary-7: --iris-7;
-    --primary-8: --iris-8;
-    --primary-9: --iris-9;
-    --primary-10: --iris-10;
-    --primary-11: --iris-11;
-    --primary-12: --iris-12;
+    --primary-1: var(--iris-1);
+    --primary-2: var(--iris-2);
+    --primary-3: var(--iris-3);
+    --primary-4: var(--iris-4);
+    --primary-5: var(--iris-5);
+    --primary-6: var(--iris-6);
+    --primary-7: var(--iris-7);
+    --primary-8: var(--iris-8);
+    --primary-9: var(--iris-9);
+    --primary-10: var(--iris-10);
+    --primary-11: var(--iris-11);
+    --primary-12: var(--iris-12);
 
     /* INFO */
     --info-1: var(--blue-1);
