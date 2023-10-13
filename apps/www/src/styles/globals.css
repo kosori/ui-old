@@ -61,6 +61,20 @@
     --success-11: var(--green-11);
     --success-12: var(--green-12);
 
+    /* WARNING */
+    --warning-1: var(--yellow-1);
+    --warning-2: var(--yellow-2);
+    --warning-3: var(--yellow-3);
+    --warning-4: var(--yellow-4);
+    --warning-5: var(--yellow-5);
+    --warning-6: var(--yellow-6);
+    --warning-7: var(--yellow-7);
+    --warning-8: var(--yellow-8);
+    --warning-9: var(--yellow-9);
+    --warning-10: var(--yellow-10);
+    --warning-11: var(--yellow-11);
+    --warning-12: var(--yellow-12);
+
     /* DANGER */
     --danger-1: var(--red-1);
     --danger-2: var(--red-2);
