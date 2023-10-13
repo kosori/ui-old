@@ -26,7 +26,7 @@ export const Default: Story = {
     intent: 'default',
   },
   render: ({ intent }) => (
-    <Alert className='max-w-screen-sm' intent={intent}>
+    <Alert className='w-fit' intent={intent}>
       <AlertTitle>
         <AlertCircle className='mr-2 h-5 w-5' />
         Heads up!
@@ -43,7 +43,7 @@ export const Info: Story = {
     intent: 'info',
   },
   render: ({ intent }) => (
-    <Alert className='max-w-screen-sm' intent={intent}>
+    <Alert className='w-fit' intent={intent}>
       <AlertTitle>
         <AlertCircle className='mr-2 h-5 w-5' />
         Heads up!
@@ -60,7 +60,7 @@ export const Success: Story = {
     intent: 'success',
   },
   render: ({ intent }) => (
-    <Alert className='max-w-screen-sm' intent={intent}>
+    <Alert className='w-fit' intent={intent}>
       <AlertTitle>
         <AlertCircle className='mr-2 h-5 w-5' />
         Heads up!
@@ -77,7 +77,7 @@ export const Warning: Story = {
     intent: 'warning',
   },
   render: ({ intent }) => (
-    <Alert className='max-w-screen-sm' intent={intent}>
+    <Alert className='w-fit' intent={intent}>
       <AlertTitle>
         <AlertCircle className='mr-2 h-5 w-5' />
         Heads up!
@@ -94,7 +94,7 @@ export const Error: Story = {
     intent: 'error',
   },
   render: ({ intent }) => (
-    <Alert className='max-w-screen-sm' intent={intent}>
+    <Alert className='w-fit' intent={intent}>
       <AlertTitle>
         <AlertCircle className='mr-2 h-5 w-5' />
         Heads up!
