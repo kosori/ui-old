@@ -10,7 +10,7 @@ const avatarStyles = tv({
   base: cn('relative flex shrink-0 overflow-hidden'),
   variants: {
     shape: {
-      rounded: 'rounded-full',
+      round: 'rounded-full',
       square: '',
     },
     size: {
@@ -22,7 +22,7 @@ const avatarStyles = tv({
     },
   },
   defaultVariants: {
-    shape: 'rounded',
+    shape: 'round',
     size: 'small',
   },
   compoundVariants: [
@@ -57,7 +57,7 @@ const avatarStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type AvatarProps = React.ComponentPropsWithoutRef<typeof Root>;
 type AvatarVariants = VariantProps<typeof avatarStyles>;
-interface Props extends AvatarProps, AvatarVariants { }
+interface Props extends AvatarProps, AvatarVariants {}
 
 const Avatar = forwardRef<Ref, Props>(
   ({ shape, size, className, ...props }, ref) => (
