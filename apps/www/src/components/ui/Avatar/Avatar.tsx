@@ -57,7 +57,29 @@ const avatarStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type AvatarProps = React.ComponentPropsWithoutRef<typeof Root>;
 type AvatarVariants = VariantProps<typeof avatarStyles>;
-interface Props extends AvatarProps, AvatarVariants {}
+interface Props extends AvatarProps, AvatarVariants {
+  /**
+   * The shape of the avatar
+   * @default 'round'
+   * @see {@link https://dub.sh/XuNhEXJ Avatar Docs} for available options.
+   */
+  shape?: AvatarVariants['shape'];
+  /**
+   * The size of the Avatar.
+   * @default 'small'
+   * @see {@link https://dub.sh/XuNhEXJ Avatar Docs} for available options.
+   */
+  size?: AvatarVariants['size'];
+}
+
+/**
+ * Contains all the parts of an avatar
+ *
+ * @param {object} props - The props for the Avatar component.
+ * @param {string} [props.shape='round'] - The shape of the avatar (either 'square' or 'round').
+ * @param {string} [props.size='small'] - The size of the avatar (e.g., 'small', 'medium', 'large').
+ * @see {@link https://dub.sh/XuNhEXJ Avatar Docs} for further information.
+ */
 
 const Avatar = forwardRef<Ref, Props>(
   ({ shape, size, className, ...props }, ref) => (
