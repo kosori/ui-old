@@ -20,7 +20,7 @@ const checkboxStyles = tv({
   variants: {
     shape: {
       square: 'rounded-md',
-      rounded: 'rounded-full',
+      round: 'rounded-full',
     },
     size: {
       small: 'h-4 w-4 p-[2px]',
@@ -36,7 +36,7 @@ const checkboxStyles = tv({
 type Ref = React.ElementRef<typeof Root>;
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof Root>;
 type CheckboxVariants = VariantProps<typeof checkboxStyles>;
-interface Props extends CheckboxProps, CheckboxVariants { }
+interface Props extends CheckboxProps, CheckboxVariants {}
 
 const Checkbox = forwardRef<Ref, Props>(
   ({ shape, size, className, ...props }, ref) => (
