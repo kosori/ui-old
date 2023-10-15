@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from 'react';
 import { Separator } from '@radix-ui/react-menubar';
 
@@ -18,4 +20,4 @@ const MenubarSeparator = forwardRef<Ref, Props>(
 
 MenubarSeparator.displayName = Separator.displayName;
 
-export default Separator;
+export default MenubarSeparator;
