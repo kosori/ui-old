@@ -10,7 +10,7 @@ export { default as MenubarCheckboxItem } from './MenubarCheckboxItem';
 export { default as MenubarRadioGroup } from './MenubarRadioGroup';
 export { default as MenubarRadioItem } from './MenubarRadioItem';
 export { default as MenubarShortcut } from './MenubarShortcut';
-export { default as MenubarSeparator } from './MenubarShortcut';
+export { default as MenubarSeparator } from './MenubarSeparator';
 export { default as MenubarSub } from './MenubarSub';
 export { default as MenubarSubTrigger } from './MenubarSubTrigger';
 export { default as MenubarSubContent } from './MenubarSubContent';
