@@ -9,7 +9,7 @@ type Ref = React.ElementRef<typeof Content>;
 type Props = React.ComponentPropsWithoutRef<typeof Content>;
 
 const SelectContent = forwardRef<Ref, Props>(
-  ({ className, children, position = 'popper', ...props }, ref) => (
+  ({ className, children, position, ...props }, ref) => (
     <Portal>
       <Content
         ref={ref}
@@ -25,7 +25,7 @@ const SelectContent = forwardRef<Ref, Props>(
           className={cn(
             'p-1',
             position === 'popper' &&
-            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
+              'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
           )}
         >
           {children}
