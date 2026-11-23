@@ -18,7 +18,7 @@
   },
   "prettier": "@kosori/prettier-config",
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^10.2.0",
+    "@icons-pack/react-simple-icons": "^13.16.0",
     "@kosori/hooks": "workspace:*",
     "@kosori/ui": "workspace:*",
     "@t3-oss/env-nextjs": "^0.11.1",
