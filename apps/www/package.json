@@ -29,7 +29,7 @@
     "@trpc/server": "catalog:",
     "embla-carousel-autoplay": "^8.6.0",
     "fumadocs-core": "^15.0.11",
-    "fumadocs-docgen": "^2.1.0",
+    "fumadocs-docgen": "^3.2.0",
     "fumadocs-mdx": "^11.6.10",
     "fumadocs-ui": "^14.7.7",
     "geist": "^1.4.2",
